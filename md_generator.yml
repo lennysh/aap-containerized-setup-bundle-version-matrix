@@ -1,0 +1,8 @@
+---
+- name: Generate Markdown Reports for AAP Setup Bundle Container Images
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  roles:
+    - role: md_generator

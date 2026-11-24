@@ -1,0 +1,12 @@
+---
+# Generated data under images/ and bundles/ is rewritten by the playbooks; package
+# lists routinely exceed yaml[line-length].
+exclude_paths:
+  - images/
+  - bundles/
+  - output/
+
+# Internal tooling roles use template-facing names (e.g. images, image_path) and
+# short-lived facts in included tasks; strict role-prefix naming adds churn without benefit.
+skip_list:
+  - var-naming[no-role-prefix]

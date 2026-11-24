@@ -1,0 +1,10 @@
+## 📦 Inspected Bundles
+
+Each bundle page lists every container image in the bundle, with consolidated RPM and Python
+package tables for CVE triage.
+
+| Bundle (Click for details) | AAP | Architecture | Images |
+| :------------------------- | :-- | :----------- | -----: |
+{% for bundle in bundles %}
+| [{{ bundle.bundle_version }}](./bundles/{{ bundle.bundle_id }}/README.md) | {{ bundle.aap_version }} | {{ bundle.architecture }} | {{ bundle.images | length }} |
+{% endfor %}

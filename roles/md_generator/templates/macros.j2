@@ -1,0 +1,23 @@
+{%- macro short_name(repo) -%}
+{{ repo.split('/')[-1] }}
+{%- endmacro -%}
+
+{%- macro anchor(repo) -%}
+{{ repo.split('/')[-1] | lower | regex_replace('[^a-z0-9 _-]', '') | replace(' ', '-') }}
+{%- endmacro -%}
+
+{%- macro short_id(image_id) -%}
+`{{ image_id | regex_replace('^sha256:', '') | truncate(12, True, '') }}`
+{%- endmacro -%}
+
+{%- macro text_block(items, summary) -%}
+<details><summary>{{ summary }} ({{ items | length }})</summary>
+
+```text
+{% for item in items %}
+{{ item }}
+{% endfor %}
+```
+
+</details>
+{%- endmacro -%}

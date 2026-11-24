@@ -1,0 +1,124 @@
+{% import 'macros.j2' as m with context %}
+{% set images = bundle.images | sort(attribute='repo') %}
+{# ---- Build consolidated package indexes: "name\tversion" -> [image short names] ---- #}
+{% set rpm_index = {} %}
+{% set pip_index = {} %}
+{% for image in images %}
+{%   for pkg in image.system_packages | default([]) %}
+{%     set parts = pkg.split(' ', 1) + [''] %}
+{%     set key = parts[0] ~ '\t' ~ parts[1] %}
+{%     set _ = rpm_index.setdefault(key, []).append(m.short_name(image.repo)) %}
+{%   endfor %}
+{%   for env in image.pip_environments | default([]) %}
+{%     for pkg in env.packages %}
+{%       set parts = pkg.split(' ', 1) + [''] %}
+{%       set key = (parts[0] | lower | regex_replace('[-_.]+', '-')) ~ '\t' ~ parts[1] %}
+{%       set _ = pip_index.setdefault(key, []).append(m.short_name(image.repo) ~ ':' ~ env.path ~ ((' (' ~ env.python ~ ')') if env.python else '')) %}
+{%     endfor %}
+{%   endfor %}
+{% endfor %}
+# AAP Containerized Setup Bundle {{ bundle.bundle_version }} ({{ bundle.architecture }})
+
+- **Bundle file:** `{{ bundle.bundle_file }}`
+- **AAP version:** {{ bundle.aap_version }}
+- **Container images:** {{ images | length }}
+- **Distinct RPM package versions:** {{ rpm_index | length }}
+- **Distinct Python package versions:** {{ pip_index | length }}
+
+> [!IMPORTANT]
+> Community resource, not official Red Hat data. Confirm CVE impact and fixes with
+> [Red Hat Security Advisories and errata](https://access.redhat.com/security/security-updates/).
+
+Generated from the bundle contents; do not edit by hand. Image IDs are config digests
+(what `podman images --no-trunc` shows after `podman load`), not registry manifest digests.
+
+## Contents
+
+- [Container Images](#container-images)
+- [RPM Packages (all images)](#rpm-packages-all-images)
+- [Python Packages (all images)](#python-packages-all-images)
+- [Image Details](#image-details)
+{% for image in images %}
+  - [{{ m.short_name(image.repo) }}](#{{ m.anchor(image.repo) }})
+{% endfor %}
+- [Installer Collections](#installer-collections)
+- [Bundled Collections](#bundled-collections)
+
+## Container Images
+
+| Image | Tag in Bundle | Version | Release | Image ID | RHEL Version | Python | Ansible Core | RPMs | Python Pkgs | Collections |
+|---|---|---|---|---|---|---|---|--:|--:|--:|
+{% for image in images %}
+| [{{ image.repo }}](#{{ m.anchor(image.repo) }}) | `{{ image.bundle_tag }}` | {{ image.version | default('N/A', true) }} | {{ image.release | default('N/A', true) }} | {{ m.short_id(image.image_id) }} | {{ image.rhel_version | default('N/A', true) }} | {{ image.python_versions | default([]) | join(', ') or 'N/A' }} | {{ image.ansible_core_version | default('N/A', true) }} | {{ image.system_packages | default([]) | length }} | {{ image.pip_environments | default([]) | map(attribute='packages') | map('length') | sum }} | {{ image.ansible_collections | default([]) | length }} |
+{% endfor %}
+
+## RPM Packages (all images)
+
+Every RPM installed in any image of this bundle (`name version-release`). Search this table for a
+package named in a CVE to see which containers ship which version.
+
+| Package | Version-Release | Images |
+|---|---|---|
+{% for key in rpm_index | sort(case_sensitive=False) %}
+{%   set name, version = key.split('\t') %}
+| `{{ name }}` | `{{ version }}` | {{ rpm_index[key] | unique | join(', ') }} |
+{% endfor %}
+
+## Python Packages (all images)
+
+Every Python distribution found in any image (`image:environment prefix (python)`), from
+`*.dist-info`/`*.egg-info` metadata. Names are normalized (PEP 503: lowercase, `-` separators). This covers system Python, `/usr/local` and application venvs.
+
+| Package | Version | Images |
+|---|---|---|
+{% for key in pip_index | sort(case_sensitive=False) %}
+{%   set name, version = key.split('\t') %}
+| `{{ name }}` | `{{ version }}` | {{ pip_index[key] | unique | join(', ') }} |
+{% endfor %}
+
+## Image Details
+
+{% for image in images %}
+### {{ m.short_name(image.repo) }}
+
+| Field | Value |
+|---|---|
+| Image | `{{ image.repo }}` |
+| Tag in bundle | `{{ image.bundle_tag }}` |
+| Archive | `bundle/images/{{ image.file }}` |
+| Labels `version` / `release` | `{{ image.version }}` / `{{ image.release }}` |
+| Image ID | `{{ image.image_id }}` |
+| Build date | {{ image.build_date | default(image.created, true) }} |
+| Architecture | {{ image.architecture }} |
+| RHEL version | {{ image.rhel_version | default('N/A', true) }} |
+| Python | {{ image.python_versions | default([]) | join(', ') or 'N/A' }} |
+| Ansible Core | {{ image.ansible_core_version | default('N/A', true) }} |
+
+{{ m.text_block(image.system_packages | default([]), 'RPM packages') }}
+
+{% for env in image.pip_environments | default([]) %}
+{{ m.text_block(env.packages, 'Python packages: ' ~ env.path ~ ((' (' ~ env.python ~ ')') if env.python else '')) }}
+
+{% endfor %}
+{% if image.ansible_collections | default([]) | length > 0 %}
+{{ m.text_block(image.ansible_collections, 'Ansible collections') }}
+
+{% endif %}
+[Back to top](#contents)
+
+{% endfor %}
+## Installer Collections
+
+Collections shipped with the installer itself (`collections/ansible_collections`).
+
+{% for item in bundle.installer_collections | default([]) %}
+- `{{ item }}`
+{% else %}
+*None*
+{% endfor %}
+
+## Bundled Collections
+
+Collection tarballs under `bundle/collections/` (uploaded to Automation Hub during install).
+
+{{ m.text_block(bundle.bundled_collections | default([]), 'Bundled collections') }}

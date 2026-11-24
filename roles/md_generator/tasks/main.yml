@@ -1,0 +1,26 @@
+---
+- name: Load all bundle vars files
+  ansible.builtin.include_vars:
+    dir: "{{ md_generator_bundles_root }}"
+    files_matching: '^bundle\.yml$'
+    name: _bundles_by_id
+
+- name: Sort bundles newest first
+  ansible.builtin.set_fact:
+    bundles: "{{ _bundles_by_id.values() | sort(attribute='sort_key', reverse=True) }}"
+
+- name: Generate per-bundle README files
+  ansible.builtin.template:
+    src: bundle_report.md.j2
+    dest: "{{ md_generator_bundles_root }}/{{ bundle.bundle_id }}/README.md"
+    mode: "0644"
+  loop: "{{ bundles }}"
+  loop_control:
+    loop_var: bundle
+    label: "{{ bundle.bundle_id }}"
+
+- name: Update root README tables
+  ansible.builtin.blockinfile:
+    path: "{{ md_generator_root_readme }}"
+    marker: "[comment]: <> ({mark} Ansible Managed)"
+    block: "{{ lookup('ansible.builtin.template', 'root_tables.md.j2') }}"

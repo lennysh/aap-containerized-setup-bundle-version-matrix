@@ -1,0 +1,10 @@
+---
+galaxy_info:
+  author: Lenny Shirley
+  description: Streams AAP containerized setup bundles and inventories every bundled container image.
+  company: Red Hat
+  license: MIT
+  min_ansible_version: "2.15"
+  galaxy_tags: []
+
+dependencies: []

@@ -1,0 +1,66 @@
+---
+- name: Parse bundle file name
+  ansible.builtin.set_fact:
+    _bundle_match: >-
+      {{ _bundle_path | basename
+         | regex_search('containerized-setup-bundle-((\d+\.\d+)-.+?)-(x86_64|aarch64|ppc64le|s390x)\.tar\.gz$',
+                        '\1', '\2', '\3') }}
+
+- name: Derive bundle identifiers
+  ansible.builtin.set_fact:
+    _bundle_id: "{{ _bundle_match[0] }}-{{ _bundle_match[2] }}"
+    _bundle_aap: "{{ _bundle_match[1] }}"
+  when: _bundle_match | length == 3
+
+- name: Check for existing bundle data
+  ansible.builtin.stat:
+    path: "{{ bundle_inspector_bundles_root }}/{{ _bundle_id }}/bundle.yml"
+  register: _bundle_existing
+  when: _bundle_match | length == 3
+
+- name: Decide whether to inspect bundle
+  ansible.builtin.set_fact:
+    _bundle_skip_reason: >-
+      {{
+        'unrecognised file name' if _bundle_match | length != 3
+        else ('AAP ' ~ _bundle_aap ~ ' is older than ' ~ bundle_inspector_min_aap_version)
+          if _bundle_aap is version(bundle_inspector_min_aap_version, '<')
+        else 'already inspected (use -e bundle_inspector_force=true)'
+          if (_bundle_existing.stat.exists and not (bundle_inspector_force | bool))
+        else ''
+      }}
+
+- name: Report skipped bundle
+  ansible.builtin.debug:
+    msg: "Skipping {{ _bundle_path | basename }}: {{ _bundle_skip_reason }}"
+  when: _bundle_skip_reason | default('', true) | length > 0
+
+- name: Inspect and record bundle
+  when: _bundle_skip_reason | default('', true) | length == 0
+  block:
+    - name: "Stream and inspect bundle: {{ _bundle_id }}"
+      ansible.builtin.command:
+        argv:
+          - "{{ bundle_inspector_python }}"
+          - -I
+          - "{{ role_path }}/files/inspect_bundle.py"
+          - "{{ _bundle_path }}"
+      register: _bundle_scan
+      changed_when: false
+
+    - name: Parse inspection results
+      ansible.builtin.set_fact:
+        _bundle: "{{ _bundle_scan.stdout | from_json }}"
+        _bundle_scan: null
+
+    - name: Ensure bundle directory exists
+      ansible.builtin.file:
+        path: "{{ bundle_inspector_bundles_root }}/{{ _bundle.bundle_id }}"
+        state: directory
+        mode: "0755"
+
+    - name: Write bundle vars file
+      ansible.builtin.template:
+        src: bundle_var.yml.j2
+        dest: "{{ bundle_inspector_bundles_root }}/{{ _bundle.bundle_id }}/bundle.yml"
+        mode: "0644"

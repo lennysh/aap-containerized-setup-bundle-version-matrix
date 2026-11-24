@@ -1,0 +1,20 @@
+---
+# Directory containing downloaded bundles (required, e.g. -e bundle_dir=~/Downloads)
+bundle_dir: ""
+
+# File name pattern(s) for containerized setup bundles. RPM-based setup bundles
+# (ansible-automation-platform-setup-bundle-*) are intentionally not matched.
+bundle_inspector_patterns:
+  - "ansible-automation-platform-containerized-setup-bundle-*.tar.gz"
+
+# Oldest AAP release to inspect (containerized installer is GA from 2.5).
+bundle_inspector_min_aap_version: "2.5"
+
+# Re-inspect bundles that already have bundles/<bundle_id>/bundle.yml
+bundle_inspector_force: false
+
+# Where generated data is written
+bundle_inspector_bundles_root: "{{ playbook_dir }}/bundles"
+
+# Python interpreter used to run the streaming inspector (needs host `rpm` on PATH)
+bundle_inspector_python: python3

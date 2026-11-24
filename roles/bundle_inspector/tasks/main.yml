@@ -1,0 +1,33 @@
+---
+- name: Validate bundle_dir
+  ansible.builtin.assert:
+    that:
+      - bundle_dir | length > 0
+    fail_msg: "Set bundle_dir, e.g. -e bundle_dir=~/Downloads"
+
+- name: Check required host tools
+  ansible.builtin.command: "{{ item }}"
+  loop:
+    - rpm --version
+    - "{{ bundle_inspector_python }} --version"
+  changed_when: false
+
+- name: Find containerized setup bundles
+  ansible.builtin.find:
+    paths: "{{ bundle_dir | expanduser }}"
+    patterns: "{{ bundle_inspector_patterns }}"
+    file_type: any
+    follow: true
+  register: _bundle_files
+
+- name: Fail when no bundles were found
+  ansible.builtin.fail:
+    msg: "No files matching {{ bundle_inspector_patterns }} in {{ bundle_dir | expanduser }}"
+  when: _bundle_files.files | length == 0
+
+- name: Inspect each bundle
+  ansible.builtin.include_tasks: bundle.yml
+  loop: "{{ _bundle_files.files | map(attribute='path') | sort }}"
+  loop_control:
+    loop_var: _bundle_path
+    label: "{{ _bundle_path | basename }}"

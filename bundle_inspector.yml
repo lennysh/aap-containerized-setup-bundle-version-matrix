@@ -1,0 +1,16 @@
+---
+# Inspect AAP containerized setup bundles found in a local directory.
+#
+#   ansible-playbook bundle_inspector.yml -e bundle_dir=~/Downloads
+#
+- name: Inspect AAP containerized setup bundles
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  roles:
+    - role: bundle_inspector
+
+- name: Regenerate markdown reports
+  ansible.builtin.import_playbook: md_generator.yml
+  when: bundle_inspector_generate_markdown | default(true) | bool
