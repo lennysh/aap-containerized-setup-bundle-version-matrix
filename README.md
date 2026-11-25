@@ -18,9 +18,9 @@ Pick your AAP version to see every inspected bundle for it, newest first.
 
 | AAP Version (Click for bundles) | Bundles | Latest Bundle | Latest Bundle Created |
 | :------------------------------ | ------: | :------------ | :-------------------- |
-| [AAP 2.7](./bundles/2.7/README.md) | 3 | [2.7-12.4](./bundles/2.7/2.7-12.4-x86_64/README.md) | 2026-11-20 13:05:26 UTC |
-| [AAP 2.6](./bundles/2.6/README.md) | 5 | [2.6-14.4](./bundles/2.6/2.6-14.4-x86_64/README.md) | 2026-11-20 18:22:08 UTC |
-| [AAP 2.5](./bundles/2.5/README.md) | 1 | [2.5-25.8](./bundles/2.5/2.5-25.8-x86_64/README.md) | 2026-11-11 18:11:51 UTC |
+| [AAP 2.7](./bundles/2.7/README.md) | 13 | [2.7-12.4](./bundles/2.7/2.7-12.4-x86_64/README.md) | 2026-11-20 13:05:26 UTC |
+| [AAP 2.6](./bundles/2.6/README.md) | 22 | [2.6-14.4](./bundles/2.6/2.6-14.4-x86_64/README.md) | 2026-11-20 18:22:08 UTC |
+| [AAP 2.5](./bundles/2.5/README.md) | 41 | [2.5-25.8](./bundles/2.5/2.5-25.8-x86_64/README.md) | 2026-11-11 18:11:51 UTC |
 
 [comment]: <> (END Ansible Managed)
 
@@ -44,6 +44,18 @@ Do **not** edit `bundles/**/README.md` or the tables above by hand. They are gen
    ```
 
 3. Review and commit the changes under `bundles/` and `README.md`.
+
+### Backfilling with ORAS (optional)
+
+If you have access to the `quay.io/aap/containerized-installer` ORAS repository, `scripts/backfill_oras.sh` fetches bundles that are not yet in `bundles/`, one at a time: pull, inspect, then delete. Only one tarball is on disk at any moment, and markdown is regenerated once at the end. Re-running it picks up where it left off.
+
+```bash
+oras login quay.io
+scripts/backfill_oras.sh --dry-run          # list what would be fetched
+scripts/backfill_oras.sh                    # all missing 2.5+ x86_64 bundles
+SINCE=2025-11-24 LIMIT=5 scripts/backfill_oras.sh
+ARCH=aarch64 scripts/backfill_oras.sh
+```
 
 ### How it works
 
