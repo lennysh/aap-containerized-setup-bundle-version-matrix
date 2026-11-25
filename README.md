@@ -21,6 +21,7 @@ Pick your AAP version to see every inspected bundle for it, newest first.
 | [AAP 2.7](./bundles/2.7/README.md) | 3 | [2.7-12.4](./bundles/2.7/2.7-12.4-x86_64/README.md) | 2026-11-20 13:05:26 UTC |
 | [AAP 2.6](./bundles/2.6/README.md) | 5 | [2.6-14.4](./bundles/2.6/2.6-14.4-x86_64/README.md) | 2026-11-20 18:22:08 UTC |
 | [AAP 2.5](./bundles/2.5/README.md) | 1 | [2.5-25.8](./bundles/2.5/2.5-25.8-x86_64/README.md) | 2026-11-11 18:11:51 UTC |
+
 [comment]: <> (END Ansible Managed)
 
 ## 🛠 Updating the version matrix

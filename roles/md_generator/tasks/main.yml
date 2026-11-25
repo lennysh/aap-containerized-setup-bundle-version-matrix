@@ -37,4 +37,5 @@
   ansible.builtin.blockinfile:
     path: "{{ md_generator_root_readme }}"
     marker: "[comment]: <> ({mark} Ansible Managed)"
-    block: "{{ lookup('ansible.builtin.template', 'root_tables.md.j2') }}"
+    # Trailing blank line keeps GitHub from rendering the END marker as a table row.
+    block: "{{ lookup('ansible.builtin.template', 'root_tables.md.j2') | trim }}\n\n"
