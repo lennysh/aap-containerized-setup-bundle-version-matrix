@@ -1,10 +1,13 @@
-# AAP Containerized Setup Bundle 2.6-11.1 (x86_64)
+[All AAP versions](../../../README.md) / [AAP 2.6](../README.md) / 2.6-12
 
-- **Bundle file:** `ansible-automation-platform-containerized-setup-bundle-2.6-11.1-x86_64.tar.gz`
+# AAP Containerized Setup Bundle 2.6-12 (x86_64)
+
+- **Bundle file:** `ansible-automation-platform-containerized-setup-bundle-2.6-12-x86_64.tar.gz`
 - **AAP version:** 2.6
+- **Bundle created:** 2026-08-24 19:25:14 UTC
 - **Container images:** 19
-- **Distinct RPM package versions:** 464
-- **Distinct Python package versions:** 904
+- **Distinct RPM package versions:** 461
+- **Distinct Python package versions:** 887
 
 > [!IMPORTANT]
 > Community resource, not official Red Hat data. Confirm CVE impact and fixes with
@@ -45,25 +48,25 @@ Generated from the bundle contents; do not edit by hand. Image IDs are config di
 
 | Image | Tag in Bundle | Version | Release | Image ID | RHEL Version | Python | Ansible Core | RPMs | Python Pkgs | Collections |
 |---|---|---|---|---|---|---|---|--:|--:|--:|
-| [registry.redhat.io/ansible-automation-platform-26/controller-rhel9](#controller-rhel9) | `latest` | 4.7.15 | 1785339117 | `343d422f248c` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9, 3.12 | N/A | 242 | 218 | 1 |
-| [registry.redhat.io/ansible-automation-platform-26/de-supported-rhel9](#de-supported-rhel9) | `latest` | 1.2.2 | 1784705586 | `544c26ab04ab` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9, 3.12 | 2.16.19 | 159 | 62 | 4 |
-| [registry.redhat.io/ansible-automation-platform-26/eda-controller-rhel9](#eda-controller-rhel9) | `latest` | 1.2.11 | 1785339117 | `0045a28392a0` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.16.19 | 138 | 108 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/eda-controller-ui-rhel9](#eda-controller-ui-rhel9) | `latest` | 1.2.11 | 1785716954 | `874f8ad16c02` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 294 | 18 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/ee-minimal-rhel9](#ee-minimal-rhel9) | `latest` | 2.0.0 | 1785339117 | `7ecbfb78234f` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.16.19 | 223 | 80 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/ee-supported-rhel9](#ee-supported-rhel9) | `latest` | 2.0.0 | 1785339117 | `fb1830d015cd` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9, 3.12 | 2.16.19 | 288 | 283 | 56 |
-| [registry.redhat.io/ansible-automation-platform-26/gateway-proxy-rhel9](#gateway-proxy-rhel9) | `latest` | 2.6.6 | 1785339117 | `4c5cfacc9301` | Red Hat Enterprise Linux 9.8 (Plow) | N/A | N/A | 114 | 0 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/gateway-rhel9](#gateway-rhel9) | `latest` | 2.6.20260804 | 1785339117 | `6546a02ab87f` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 149 | 72 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/hub-rhel9](#hub-rhel9) | `latest` | 4.11.12 | 1785339117 | `3d0189fdfa48` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.20.3 | 152 | 162 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/hub-web-rhel9](#hub-web-rhel9) | `latest` | 4.11.12 | 1785716954 | `22b01d68df5b` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 294 | 18 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/lightspeed-chatbot-rhel9](#lightspeed-chatbot-rhel9) | `latest` | 2.6.20260723 | 1785339117 | `126fc9bad006` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 144 | 138 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/lightspeed-rhel9](#lightspeed-rhel9) | `latest` | 2.6.20260804 | 1784705586 | `5adec51a758c` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.16.19 | 154 | 155 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/mcp-tools-rhel9](#mcp-tools-rhel9) | `latest` | 2.6.20260724 | 1785339117 | `9068cc9f9437` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 121 | 48 | 0 |
-| [registry.redhat.io/ansible-automation-platform-26/receptor-rhel9](#receptor-rhel9) | `latest` | 1.6.7 | 1785339117 | `ddedf519e330` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 119 | 9 | 0 |
-| [registry.redhat.io/ansible-automation-platform-tech-preview/mcp-server-rhel9](#mcp-server-rhel9) | `latest` | 2.6.20260715 | 1785358992 | `f9d01f6bb257` | Red Hat Enterprise Linux 9.8 (Plow) | N/A | N/A | 144 | 0 | 0 |
-| [registry.redhat.io/ansible-automation-platform-tech-preview/metrics-service-rhel9](#metrics-service-rhel9) | `latest` | 2.6.20260804 | 1785339117 | `781ab32ac7f8` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 160 | 65 | 0 |
-| [registry.redhat.io/rhel9/pcp](#pcp) | `latest` | 6 | 1785949617 | `16fd1e614a88` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 212 | 19 | 0 |
-| [registry.redhat.io/rhel9/postgresql-15](#postgresql-15) | `latest` | 1 | 1785718504 | `3d0f2918cf9e` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 273 | 18 | 0 |
-| [registry.redhat.io/rhel9/redis-6](#redis-6) | `latest` | 1 | 1785892346 | `9390b4491fb2` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 210 | 18 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/controller-rhel9](#controller-rhel9) | `latest` | 4.7.16 | 1786987521 | `331d33076034` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9, 3.12 | N/A | 242 | 217 | 1 |
+| [registry.redhat.io/ansible-automation-platform-26/de-supported-rhel9](#de-supported-rhel9) | `latest` | 1.2.2 | 1786987521 | `d519fb4e123c` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9, 3.12 | 2.16.19 | 159 | 62 | 4 |
+| [registry.redhat.io/ansible-automation-platform-26/eda-controller-rhel9](#eda-controller-rhel9) | `latest` | 1.2.12 | 1786987521 | `66c07134ab18` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.16.19 | 138 | 108 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/eda-controller-ui-rhel9](#eda-controller-ui-rhel9) | `latest` | 1.2.12 | 1787065328 | `085e1d4da621` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 294 | 18 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/ee-minimal-rhel9](#ee-minimal-rhel9) | `latest` | 2.0.0 | 1786987521 | `1f7e24099058` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.16.19 | 223 | 79 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/ee-supported-rhel9](#ee-supported-rhel9) | `latest` | 2.0.0 | 1786987521 | `539d58801bfe` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9, 3.12 | 2.16.19 | 288 | 283 | 56 |
+| [registry.redhat.io/ansible-automation-platform-26/gateway-proxy-rhel9](#gateway-proxy-rhel9) | `latest` | 2.6.6 | 1786987521 | `019db584e6fa` | Red Hat Enterprise Linux 9.8 (Plow) | N/A | N/A | 114 | 0 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/gateway-rhel9](#gateway-rhel9) | `latest` | 2.6.20260824 | 1786987521 | `215881346af1` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 149 | 72 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/hub-rhel9](#hub-rhel9) | `latest` | 4.11.13 | 1786987521 | `eed001637fca` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.16.19 | 152 | 162 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/hub-web-rhel9](#hub-web-rhel9) | `latest` | 4.11.13 | 1787065328 | `4c2524e051f7` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 294 | 18 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/lightspeed-chatbot-rhel9](#lightspeed-chatbot-rhel9) | `latest` | 2.6.20260806 | 1786987521 | `c951eea5b957` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 144 | 138 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/lightspeed-rhel9](#lightspeed-rhel9) | `latest` | 2.6.20260824 | 1784705586 | `9f1c908107b4` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | 2.16.19 | 154 | 155 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/mcp-tools-rhel9](#mcp-tools-rhel9) | `latest` | 2.6.20260814 | 1786987521 | `0915691fe42f` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 121 | 48 | 0 |
+| [registry.redhat.io/ansible-automation-platform-26/receptor-rhel9](#receptor-rhel9) | `latest` | 1.6.7 | 1786987521 | `d5bb49d67b11` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 119 | 9 | 0 |
+| [registry.redhat.io/ansible-automation-platform-tech-preview/mcp-server-rhel9](#mcp-server-rhel9) | `latest` | 2.6.20260824 | 1787020445 | `8fd2887ef202` | Red Hat Enterprise Linux 9.8 (Plow) | N/A | N/A | 144 | 0 | 0 |
+| [registry.redhat.io/ansible-automation-platform-tech-preview/metrics-service-rhel9](#metrics-service-rhel9) | `latest` | 2.6.20260824 | 1786987521 | `f30238dcadd1` | Red Hat Enterprise Linux 9.8 (Plow) | 3.12 | N/A | 160 | 65 | 0 |
+| [registry.redhat.io/rhel9/pcp](#pcp) | `latest` | 6 | 1787079009 | `b423bd32e15d` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 212 | 19 | 0 |
+| [registry.redhat.io/rhel9/postgresql-15](#postgresql-15) | `latest` | 1 | 1787044133 | `2fc294ba14c4` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 273 | 18 | 0 |
+| [registry.redhat.io/rhel9/redis-6](#redis-6) | `latest` | 1 | 1787043062 | `2fcc7d1f025a` | Red Hat Enterprise Linux 9.8 (Plow) | 3.9 | N/A | 210 | 18 | 0 |
 
 ## RPM Packages (all images)
 
@@ -80,14 +83,14 @@ package named in a CVE to see which containers ship which version.
 | `apr-util-bdb` | `1.6.1-23.el9` | controller-rhel9, ee-supported-rhel9 |
 | `attr` | `2.5.1-3.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `audit-libs` | `3.1.5-8.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `automation-controller-cli` | `4.7.15-2.el9ap` | ee-supported-rhel9 |
-| `automation-gateway-config` | `2.6.20260804-1.el9ap` | gateway-proxy-rhel9 |
+| `automation-controller-cli` | `4.7.16-1.el9ap` | ee-supported-rhel9 |
+| `automation-gateway-config` | `2.6.20260824-1.el9ap` | gateway-proxy-rhel9 |
 | `automation-gateway-proxy-server` | `2.6.17-2.el9ap` | gateway-proxy-rhel9 |
 | `avahi-libs` | `0.8-23.el9` | de-supported-rhel9, pcp |
 | `basesystem` | `11-13.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `bash` | `5.1.8-9.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `bash-completion` | `2.11-5.el9` | ee-supported-rhel9 |
-| `bsdtar` | `3.5.3-9.el9_7` | eda-controller-ui-rhel9, hub-web-rhel9, postgresql-15, redis-6 |
+| `bsdtar` | `3.5.3-11.el9_8` | eda-controller-ui-rhel9, hub-web-rhel9, postgresql-15, redis-6 |
 | `bzip2` | `1.0.8-11.el9` | ee-minimal-rhel9, ee-supported-rhel9 |
 | `bzip2-libs` | `1.0.8-11.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `c-ares` | `1.19.1-2.el9_4` | controller-rhel9, ee-supported-rhel9, gateway-rhel9, hub-rhel9 |
@@ -103,7 +106,8 @@ package named in a CVE to see which containers ship which version.
 | `crypto-policies` | `20260224-1.gitea0f072.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `crypto-policies-scripts` | `20260224-1.gitea0f072.el9_8` | de-supported-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `cups-libs` | `2.3.3op2-39.el9_8` | de-supported-rhel9 |
-| `curl-minimal` | `7.76.1-40.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `curl-minimal` | `7.76.1-40.el9` | lightspeed-rhel9 |
+| `curl-minimal` | `7.76.1-40.el9_8.5` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `cyrus-sasl-lib` | `2.1.27-22.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `dbus` | `1.12.20-8.el9` | controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, gateway-rhel9, hub-web-rhel9, lightspeed-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `dbus-broker` | `28-7.el9` | controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, gateway-rhel9, hub-web-rhel9, lightspeed-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
@@ -140,21 +144,17 @@ package named in a CVE to see which containers ship which version.
 | `gettext-libs` | `0.21-8.el9` | eda-controller-ui-rhel9, hub-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `git-core` | `2.52.0-1.el9` | controller-rhel9, eda-controller-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-rhel9, metrics-service-rhel9 |
 | `git-lfs` | `3.7.1-4.el9_8.2` | controller-rhel9, ee-supported-rhel9 |
-| `glib2` | `2.68.4-19.el9_8.2` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `glibc` | `2.34-274.el9_8` | de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, gateway-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, metrics-service-rhel9, postgresql-15 |
-| `glibc` | `2.34-275.el9_8` | controller-rhel9, ee-minimal-rhel9, gateway-proxy-rhel9, hub-rhel9, lightspeed-rhel9, mcp-server-rhel9, pcp, redis-6 |
-| `glibc-common` | `2.34-274.el9_8` | de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, gateway-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, metrics-service-rhel9, postgresql-15 |
-| `glibc-common` | `2.34-275.el9_8` | controller-rhel9, ee-minimal-rhel9, gateway-proxy-rhel9, hub-rhel9, lightspeed-rhel9, mcp-server-rhel9, pcp, redis-6 |
-| `glibc-langpack-en` | `2.34-274.el9_8` | eda-controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, gateway-rhel9, hub-web-rhel9, metrics-service-rhel9, postgresql-15 |
-| `glibc-langpack-en` | `2.34-275.el9_8` | controller-rhel9, ee-minimal-rhel9, gateway-proxy-rhel9, hub-rhel9, lightspeed-rhel9, mcp-server-rhel9, redis-6 |
-| `glibc-locale-source` | `2.34-274.el9_8` | eda-controller-ui-rhel9, hub-web-rhel9, postgresql-15 |
-| `glibc-locale-source` | `2.34-275.el9_8` | redis-6 |
-| `glibc-minimal-langpack` | `2.34-274.el9_8` | de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, gateway-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, metrics-service-rhel9, postgresql-15 |
-| `glibc-minimal-langpack` | `2.34-275.el9_8` | controller-rhel9, ee-minimal-rhel9, gateway-proxy-rhel9, hub-rhel9, lightspeed-rhel9, mcp-server-rhel9, pcp, redis-6 |
+| `glib2` | `2.68.4-19.el9_8.2` | lightspeed-rhel9 |
+| `glib2` | `2.68.4-19.el9_8.9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `glibc` | `2.34-275.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `glibc-common` | `2.34-275.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `glibc-langpack-en` | `2.34-275.el9_8` | controller-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-rhel9, mcp-server-rhel9, metrics-service-rhel9, postgresql-15, redis-6 |
+| `glibc-locale-source` | `2.34-275.el9_8` | eda-controller-ui-rhel9, hub-web-rhel9, postgresql-15, redis-6 |
+| `glibc-minimal-langpack` | `2.34-275.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `gmp` | `6.2.0-13.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `gnupg2` | `2.3.3-5.el9_7` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `gnutls` | `3.8.10-4.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, postgresql-15, redis-6 |
-| `gnutls` | `3.8.10-8.el9_8` | pcp |
+| `gnutls` | `3.8.10-4.el9_8` | lightspeed-rhel9 |
+| `gnutls` | `3.8.10-8.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `gobject-introspection` | `1.68.0-11.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `gpg-pubkey` | `5a6340b3-6229229e` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `gpg-pubkey` | `fd431d51-4ae0493b` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
@@ -167,7 +167,7 @@ package named in a CVE to see which containers ship which version.
 | `hostname` | `3.23-6.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp |
 | `ima-evm-utils` | `1.6.2-2.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `iproute` | `6.17.0-2.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
-| `java-17-openjdk-headless` | `17.0.20.0.8-1.2.el9` | de-supported-rhel9 |
+| `java-17-openjdk-headless` | `17.0.20.1.1-1.2.el9` | de-supported-rhel9 |
 | `javapackages-filesystem` | `6.4.0-1.el9` | de-supported-rhel9 |
 | `jbigkit-libs` | `2.1-23.el9` | eda-controller-ui-rhel9, hub-web-rhel9 |
 | `jq` | `1.6-19.el9_8.2` | lightspeed-chatbot-rhel9 |
@@ -185,7 +185,8 @@ package named in a CVE to see which containers ship which version.
 | `less` | `590-6.el9` | controller-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-rhel9, hub-web-rhel9, metrics-service-rhel9, postgresql-15, redis-6 |
 | `libacl` | `2.4.0-1.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libaio` | `0.3.111-13.el9` | ee-supported-rhel9 |
-| `libarchive` | `3.5.3-9.el9_7` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `libarchive` | `3.5.3-11.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `libarchive` | `3.5.3-9.el9_7` | lightspeed-rhel9 |
 | `libassuan` | `2.5.5-3.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libattr` | `2.5.1-3.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libblkid` | `2.37.4-25.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
@@ -196,7 +197,8 @@ package named in a CVE to see which containers ship which version.
 | `libcbor` | `0.7.0-5.el9` | controller-rhel9, eda-controller-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-rhel9, metrics-service-rhel9 |
 | `libcom_err` | `1.46.5-8.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libcomps` | `0.1.18-1.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
-| `libcurl-minimal` | `7.76.1-40.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `libcurl-minimal` | `7.76.1-40.el9` | lightspeed-rhel9 |
+| `libcurl-minimal` | `7.76.1-40.el9_8.5` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libdb` | `5.3.28-57.el9_6` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libdnf` | `0.69.0-18.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libdnf-plugin-subscription-manager` | `1.29.50-1.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
@@ -209,8 +211,8 @@ package named in a CVE to see which containers ship which version.
 | `libffi` | `3.4.2-8.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libfido2` | `1.13.0-2.el9` | controller-rhel9, eda-controller-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-rhel9, metrics-service-rhel9 |
 | `libgcc` | `11.5.0-14.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `libgcrypt` | `1.10.0-11.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, postgresql-15, redis-6 |
-| `libgcrypt` | `1.10.0-13.el9_8` | pcp |
+| `libgcrypt` | `1.10.0-11.el9` | lightspeed-rhel9 |
+| `libgcrypt` | `1.10.0-13.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libgfortran` | `11.5.0-14.el9` | ee-supported-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, metrics-service-rhel9 |
 | `libgomp` | `11.5.0-14.el9` | controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libgpg-error` | `1.42-5.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
@@ -222,7 +224,8 @@ package named in a CVE to see which containers ship which version.
 | `libmnl` | `1.0.4-16.el9_4` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `libmodulemd` | `2.13.0-2.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libmount` | `2.37.4-25.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `libnghttp2` | `1.43.0-6.el9_8.1` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `libnghttp2` | `1.43.0-6.el9_8.1` | lightspeed-rhel9 |
+| `libnghttp2` | `1.43.0-6.el9_8.2` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `libnsl2` | `2.0.0-1.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-rhel9, hub-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, metrics-service-rhel9 |
 | `libomp` | `21.1.8-2.el9` | lightspeed-chatbot-rhel9 |
 | `libpeas` | `1.30.0-4.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9 |
@@ -300,18 +303,18 @@ package named in a CVE to see which containers ship which version.
 | `nginx-mod-http-xslt-filter` | `1.24.0-7.module+el9.8.0+24502+c9b9ab67.3` | eda-controller-ui-rhel9, hub-web-rhel9 |
 | `nginx-mod-mail` | `1.24.0-7.module+el9.8.0+24502+c9b9ab67.3` | eda-controller-ui-rhel9, hub-web-rhel9 |
 | `nginx-mod-stream` | `1.24.0-7.module+el9.8.0+24502+c9b9ab67.3` | eda-controller-ui-rhel9, hub-web-rhel9 |
-| `nodejs` | `22.23.1-2.module+el9.8.0+24538+3f176d52` | mcp-server-rhel9 |
-| `nodejs-full-i18n` | `22.23.1-2.module+el9.8.0+24538+3f176d52` | mcp-server-rhel9 |
-| `nodejs-libs` | `22.23.1-2.module+el9.8.0+24538+3f176d52` | mcp-server-rhel9 |
-| `nodejs-nodemon` | `3.1.14-1.module+el9.8.0+24540+c30b2ffe` | mcp-server-rhel9 |
-| `npm` | `10.9.8-1.22.23.1.2.module+el9.8.0+24538+3f176d52` | mcp-server-rhel9 |
+| `nodejs` | `22.23.1-3.module+el9.8.0+24637+e0b636e5` | mcp-server-rhel9 |
+| `nodejs-full-i18n` | `22.23.1-3.module+el9.8.0+24637+e0b636e5` | mcp-server-rhel9 |
+| `nodejs-libs` | `22.23.1-3.module+el9.8.0+24637+e0b636e5` | mcp-server-rhel9 |
+| `nodejs-nodemon` | `3.1.14-2.module+el9.8.0+24637+e0b636e5` | mcp-server-rhel9 |
+| `npm` | `10.9.8-1.22.23.1.3.module+el9.8.0+24637+e0b636e5` | mcp-server-rhel9 |
 | `npth` | `1.6-8.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `nspr` | `4.36.0-8.el9_4` | de-supported-rhel9 |
-| `nss` | `3.112.0-8.el9_4` | de-supported-rhel9 |
-| `nss-softokn` | `3.112.0-8.el9_4` | de-supported-rhel9 |
-| `nss-softokn-freebl` | `3.112.0-8.el9_4` | de-supported-rhel9 |
-| `nss-sysinit` | `3.112.0-8.el9_4` | de-supported-rhel9 |
-| `nss-util` | `3.112.0-8.el9_4` | de-supported-rhel9 |
+| `nspr` | `4.39.0-5.el9_6` | de-supported-rhel9 |
+| `nss` | `3.124.0-5.el9_6` | de-supported-rhel9 |
+| `nss-softokn` | `3.124.0-5.el9_6` | de-supported-rhel9 |
+| `nss-softokn-freebl` | `3.124.0-5.el9_6` | de-supported-rhel9 |
+| `nss-sysinit` | `3.124.0-5.el9_6` | de-supported-rhel9 |
+| `nss-util` | `3.124.0-5.el9_6` | de-supported-rhel9 |
 | `nss_wrapper` | `1.1.13-1.el9` | ee-minimal-rhel9, ee-supported-rhel9 |
 | `nss_wrapper-libs` | `1.1.13-1.el9` | eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-web-rhel9, postgresql-15 |
 | `numactl-libs` | `2.0.19-3.el9` | ee-supported-rhel9 |
@@ -319,32 +322,28 @@ package named in a CVE to see which containers ship which version.
 | `openblas` | `0.3.29-1.el9` | ee-supported-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, metrics-service-rhel9 |
 | `openblas-openmp` | `0.3.29-1.el9` | ee-supported-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, metrics-service-rhel9 |
 | `openldap` | `2.6.8-4.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `openshift-clients` | `4.19.0-202605281656.p2.gb2a93a6.assembly.stream.el9` | ee-supported-rhel9 |
-| `openssh` | `9.9p1-7.el9_8` | ee-supported-rhel9 |
-| `openssh` | `9.9p1-9.el9_8` | controller-rhel9, eda-controller-rhel9, ee-minimal-rhel9, hub-rhel9, metrics-service-rhel9 |
-| `openssh-clients` | `9.9p1-7.el9_8` | ee-supported-rhel9 |
-| `openssh-clients` | `9.9p1-9.el9_8` | controller-rhel9, eda-controller-rhel9, ee-minimal-rhel9, hub-rhel9, metrics-service-rhel9 |
-| `openssl` | `3.5.5-5.el9_8` | de-supported-rhel9, lightspeed-rhel9 |
-| `openssl` | `3.5.5-6.el9_8` | controller-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `openshift-clients` | `4.19.0-202608111604.p2.gb2a93a6.assembly.stream.el9` | ee-supported-rhel9 |
+| `openssh` | `9.9p1-9.el9_8` | controller-rhel9, eda-controller-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-rhel9, metrics-service-rhel9 |
+| `openssh-clients` | `9.9p1-9.el9_8` | controller-rhel9, eda-controller-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-rhel9, metrics-service-rhel9 |
+| `openssl` | `3.5.5-6.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `openssl-fips-provider` | `3.0.7-11.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `openssl-fips-provider-so` | `3.0.7-11.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `openssl-libs` | `3.5.5-5.el9_8` | de-supported-rhel9, lightspeed-rhel9 |
-| `openssl-libs` | `3.5.5-6.el9_8` | controller-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `p11-kit` | `0.26.2-1.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, postgresql-15 |
-| `p11-kit` | `0.26.4-1.el9_8` | pcp, redis-6 |
-| `p11-kit-trust` | `0.26.2-1.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, postgresql-15 |
-| `p11-kit-trust` | `0.26.4-1.el9_8` | pcp, redis-6 |
+| `openssl-libs` | `3.5.5-6.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `p11-kit` | `0.26.2-1.el9` | lightspeed-rhel9 |
+| `p11-kit` | `0.26.4-1.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `p11-kit-trust` | `0.26.2-1.el9` | lightspeed-rhel9 |
+| `p11-kit-trust` | `0.26.4-1.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `pam` | `1.5.1-28.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `passwd` | `0.80-12.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
-| `pcp` | `6.3.7-8.el9_8` | pcp |
-| `pcp-conf` | `6.3.7-8.el9_8` | pcp |
-| `pcp-doc` | `6.3.7-8.el9_8` | pcp |
-| `pcp-libs` | `6.3.7-8.el9_8` | pcp |
-| `pcp-pmda-dm` | `6.3.7-8.el9_8` | pcp |
-| `pcp-pmda-nfsclient` | `6.3.7-8.el9_8` | pcp |
-| `pcp-pmda-openmetrics` | `6.3.7-8.el9_8` | pcp |
-| `pcp-system-tools` | `6.3.7-8.el9_8` | pcp |
-| `pcp-zeroconf` | `6.3.7-8.el9_8` | pcp |
+| `pcp` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-conf` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-doc` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-libs` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-pmda-dm` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-pmda-nfsclient` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-pmda-openmetrics` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-system-tools` | `6.3.7-8.el9_8.4` | pcp |
+| `pcp-zeroconf` | `6.3.7-8.el9_8.4` | pcp |
 | `pcre` | `8.44-4.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `pcre2` | `10.40-6.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
 | `pcre2-syntax` | `10.40-6.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
@@ -413,17 +412,17 @@ package named in a CVE to see which containers ship which version.
 | `podman-remote` | `5.8.2-5.el9_8` | controller-rhel9, ee-supported-rhel9, receptor-rhel9 |
 | `policycoreutils` | `3.6-5.el9` | ee-supported-rhel9, redis-6 |
 | `popt` | `1.18-8.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `postgresql` | `13.23-3.el9_8` | metrics-service-rhel9 |
+| `postgresql` | `13.23-5.el9_8` | metrics-service-rhel9 |
 | `postgresql` | `15.18-1.module+el9.8.0+24358+32c5830e` | controller-rhel9, gateway-rhel9, postgresql-15 |
 | `postgresql-contrib` | `15.18-1.module+el9.8.0+24358+32c5830e` | postgresql-15 |
-| `postgresql-private-libs` | `13.23-3.el9_8` | metrics-service-rhel9 |
+| `postgresql-private-libs` | `13.23-5.el9_8` | metrics-service-rhel9 |
 | `postgresql-private-libs` | `15.18-1.module+el9.8.0+24358+32c5830e` | controller-rhel9, gateway-rhel9, postgresql-15 |
 | `postgresql-server` | `15.18-1.module+el9.8.0+24358+32c5830e` | postgresql-15 |
 | `postgresql-upgrade` | `15.18-1.module+el9.8.0+24358+32c5830e` | postgresql-15 |
 | `procps-ng` | `3.3.17-14.el9` | eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `protobuf` | `3.14.0-17.el9_7` | lightspeed-chatbot-rhel9 |
 | `psmisc` | `23.4-3.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
-| `python3` | `3.9.25-7.el9_8.2` | controller-rhel9, de-supported-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
+| `python3` | `3.9.25-7.el9_8.3` | controller-rhel9, de-supported-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-chardet` | `4.0.0-5.el9` | controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-cloud-what` | `1.29.50-1.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-dateutil` | `2.9.0.post0-1.el9_7` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
@@ -435,16 +434,16 @@ package named in a CVE to see which containers ship which version.
 | `python3-gobject-base-noarch` | `3.40.1-6.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-gpg` | `1.15.1-6.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-hawkey` | `0.69.0-18.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
-| `python3-idna` | `2.10-7.el9_4.1` | controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
+| `python3-idna` | `2.10-8.el9_8` | controller-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-iniparse` | `0.4-45.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-inotify` | `0.9.6-25.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-libcomps` | `0.1.18-1.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-libdnf` | `0.69.0-18.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-librepo` | `1.19.0-1.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
-| `python3-libs` | `3.9.25-7.el9_8.2` | controller-rhel9, de-supported-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
+| `python3-libs` | `3.9.25-7.el9_8.3` | controller-rhel9, de-supported-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-libselinux` | `3.6-3.el9` | controller-rhel9 |
 | `python3-libsemanage` | `3.6-5.el9_6` | controller-rhel9 |
-| `python3-pcp` | `6.3.7-8.el9_8` | pcp |
+| `python3-pcp` | `6.3.7-8.el9_8.4` | pcp |
 | `python3-pexpect` | `4.8.0-7.el9` | controller-rhel9, ee-supported-rhel9 |
 | `python3-pip-wheel` | `21.3.1-2.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-ui-rhel9, ee-supported-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `python3-ptyprocess` | `0.6.0-12.el9` | controller-rhel9, ee-supported-rhel9 |
@@ -515,8 +514,9 @@ package named in a CVE to see which containers ship which version.
 | `tar` | `1.34-11.el9` | eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-server-rhel9, pcp, postgresql-15, redis-6 |
 | `tcl` | `8.6.10-7.el9` | eda-controller-ui-rhel9, hub-web-rhel9, postgresql-15, redis-6 |
 | `tpm2-tss` | `3.2.3-1.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
-| `tzdata` | `2026b-1.el9` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, lightspeed-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
-| `tzdata-java` | `2026b-1.el9` | de-supported-rhel9 |
+| `tzdata` | `2026b-1.el9` | lightspeed-rhel9 |
+| `tzdata` | `2026c-1.el9_8` | controller-rhel9, de-supported-rhel9, eda-controller-rhel9, eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, gateway-proxy-rhel9, gateway-rhel9, hub-rhel9, hub-web-rhel9, lightspeed-chatbot-rhel9, mcp-tools-rhel9, receptor-rhel9, mcp-server-rhel9, metrics-service-rhel9, pcp, postgresql-15, redis-6 |
+| `tzdata-java` | `2026c-1.el9_8` | de-supported-rhel9 |
 | `unzip` | `6.0-60.el9` | eda-controller-ui-rhel9, ee-minimal-rhel9, ee-supported-rhel9, hub-web-rhel9, postgresql-15, redis-6 |
 | `usermode` | `1.114-7.el9` | controller-rhel9, eda-controller-ui-rhel9, hub-web-rhel9, pcp, postgresql-15, redis-6 |
 | `utf8proc` | `2.6.1-4.el9` | controller-rhel9, ee-supported-rhel9 |
@@ -545,8 +545,8 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | Package | Version | Images |
 |---|---|---|
 | `a2a-sdk` | `0.3.26` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `aap-eda` | `1.2.11` | eda-controller-rhel9:/usr (python3.12) |
-| `aap-gateway` | `2.6.20260804` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
+| `aap-eda` | `1.2.12` | eda-controller-rhel9:/usr (python3.12) |
+| `aap-gateway` | `2.6.20260824` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `adal` | `1.2.7` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `aiobotocore` | `2.11.2` | ee-supported-rhel9:/usr/local (python3.12) |
 | `aiobotocore` | `3.9.0` | de-supported-rhel9:/usr/local (python3.12) |
@@ -556,9 +556,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `aiofiles` | `24.1.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `aiohappyeyeballs` | `2.6.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `aiohappyeyeballs` | `2.7.1` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `aiohttp` | `3.14.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `aiohttp` | `3.14.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
-| `aiohttp` | `3.14.3` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `aiohttp` | `3.14.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `aiohttp-retry` | `2.8.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `aioitertools` | `0.11.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `aioitertools` | `0.13.0` | de-supported-rhel9:/usr/local (python3.12) |
@@ -575,12 +573,11 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `ansible-chatbot-stack` | `0.1.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `ansible-compat` | `25.12.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `ansible-compat` | `25.12.1` | hub-rhel9:/usr (python3.12) |
-| `ansible-compat` | `25.8.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `ansible-core` | `2.16.19` | de-supported-rhel9:/usr/local (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
-| `ansible-core` | `2.20.3` | hub-rhel9:/usr (python3.12) |
+| `ansible-compat` | `26.8.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `ansible-core` | `2.16.19` | de-supported-rhel9:/usr/local (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `ansible-lint` | `25.5.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `ansible-lint` | `25.8.2` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `ansible-lint` | `26.3.0` | hub-rhel9:/usr (python3.12) |
+| `ansible-lint` | `26.8.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `ansible-mcp-tools` | `0.1.0` | mcp-tools-rhel9:/usr/local (python3.12) |
 | `ansible-pylibssh` | `1.2.2` | ee-supported-rhel9:/usr/local (python3.12) |
 | `ansible-rulebook` | `1.2.2` | de-supported-rhel9:/usr/local (python3.12) |
@@ -608,22 +605,22 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `async-timeout` | `5.0.1` | de-supported-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
 | `asyncio-throttle` | `1.0.2` | hub-rhel9:/usr (python3.12) |
 | `asyncpg` | `0.31.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `attrs` | `22.2.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
+| `attrs` | `22.2.0` | hub-rhel9:/usr (python3.12) |
 | `attrs` | `23.1.0` | eda-controller-rhel9:/usr (python3.12) |
 | `attrs` | `23.2.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `attrs` | `25.3.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `attrs` | `25.4.0` | metrics-service-rhel9:/usr (python3.12) |
-| `attrs` | `26.1.0` | de-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
+| `attrs` | `26.1.0` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `authlib` | `1.7.2` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `autobahn` | `23.6.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `autobahn` | `24.4.2` | eda-controller-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `autocommand` | `2.2.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `automat` | `22.10.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12) |
 | `automat` | `25.4.16` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `awx` | `4.7.15` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
+| `awx` | `4.7.16` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `awx-plugins-core` | `0.0.1a10` | eda-controller-rhel9:/usr (python3.12) |
 | `awx-plugins-interfaces` | `0.0.1a5` | eda-controller-rhel9:/usr (python3.12) |
-| `awxkit` | `4.7.15` | ee-supported-rhel9:/usr (python3.12) |
+| `awxkit` | `4.7.16` | ee-supported-rhel9:/usr (python3.12) |
 | `azure-cli-core` | `2.74.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `azure-cli-telemetry` | `1.1.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `azure-common` | `1.1.28` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
@@ -714,9 +711,9 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `botocore` | `1.42.73` | hub-rhel9:/usr (python3.12) |
 | `botocore` | `1.43.36` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `botocore` | `1.43.56` | de-supported-rhel9:/usr/local (python3.12) |
-| `bracex` | `2.4` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `bracex` | `2.5.post1` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `bracex` | `2.6` | hub-rhel9:/usr (python3.12) |
+| `bracex` | `3.0.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `brotli` | `1.2.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `cachecontrol` | `0.14.3` | hub-rhel9:/usr (python3.12) |
 | `cachetools` | `3.1.1` | eda-controller-rhel9:/usr (python3.12) |
@@ -730,7 +727,8 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `certifi` | `2026.7.22` | de-supported-rhel9:/usr/local (python3.12) |
 | `certifi` | `2038.12.31` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), gateway-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `cffi` | `1.16.0` | ee-minimal-rhel9:/usr (python3.12), ee-supported-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr (python3.12), mcp-tools-rhel9:/usr (python3.12) |
-| `cffi` | `2.0.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `cffi` | `2.0.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr (python3.12), eda-controller-rhel9:/usr (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `cffi` | `2.1.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `channels` | `4.3.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12) |
 | `channels-redis` | `4.2.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `chardet` | `4.0.0` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), ee-supported-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
@@ -742,30 +740,28 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `charset-normalizer` | `3.4.2` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `charset-normalizer` | `3.4.4` | metrics-service-rhel9:/usr (python3.12) |
 | `charset-normalizer` | `3.4.6` | hub-rhel9:/usr (python3.12) |
-| `charset-normalizer` | `3.4.9` | de-supported-rhel9:/usr/local (python3.12) |
+| `charset-normalizer` | `3.5.1` | de-supported-rhel9:/usr/local (python3.12) |
 | `click` | `8.1.3` | eda-controller-rhel9:/usr (python3.12) |
-| `click` | `8.1.7` | ee-minimal-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
+| `click` | `8.1.7` | hub-rhel9:/usr (python3.12) |
 | `click` | `8.1.8` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `click` | `8.2.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `click` | `8.3.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `click` | `8.4.2` | mcp-tools-rhel9:/usr/local (python3.12) |
+| `click` | `8.4.2` | ee-minimal-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `constantly` | `23.10.4` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `croniter` | `1.3.14` | eda-controller-rhel9:/usr (python3.12) |
 | `croniter` | `6.0.0` | metrics-service-rhel9:/usr (python3.12) |
 | `crontab` | `1.0.5` | eda-controller-rhel9:/usr (python3.12) |
 | `cryptography` | `41.0.7` | ee-minimal-rhel9:/usr (python3.12), ee-supported-rhel9:/usr (python3.12) |
-| `cryptography` | `46.0.7` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
+| `cryptography` | `46.0.7` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr (python3.12), eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
 | `cryptography` | `48.0.0` | gateway-rhel9:/opt/aap-gateway/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
-| `cryptography` | `49.0.0` | mcp-tools-rhel9:/usr/local (python3.12) |
+| `cryptography` | `50.0.0` | ee-minimal-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `cython` | `3.2.4` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `daphne` | `4.2.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
-| `daphne` | `4.2.2` | eda-controller-rhel9:/usr (python3.12) |
+| `daphne` | `4.2.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12) |
 | `daphne` | `4.2.3` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `dbus-python` | `1.2.18` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
 | `decorator` | `4.4.2` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
-| `decorator` | `5.1.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `decorator` | `5.2.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `decorator` | `5.3.1` | de-supported-rhel9:/usr/local (python3.12) |
+| `decorator` | `5.3.1` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `defusedxml` | `0.7.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `deprecated` | `1.2.14` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `deprecated` | `1.2.18` | eda-controller-rhel9:/usr (python3.12) |
@@ -774,13 +770,13 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `dispatcherd` | `2025.5.19` | eda-controller-rhel9:/usr (python3.12) |
 | `dispatcherd` | `2026.1.27` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `distlib` | `0.4.0` | ee-supported-rhel9:/usr/local (python3.12) |
-| `distro` | `1.9.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
-| `django` | `5.2.12` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12) |
-| `django` | `5.2.15` | lightspeed-rhel9:/var/www/venv (python3.12) |
+| `distro` | `1.9.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `django` | `5.2.12` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
+| `django` | `5.2.17` | hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `django` | `5.2.7` | metrics-service-rhel9:/usr (python3.12) |
 | `django` | `5.2.9` | eda-controller-rhel9:/usr (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `django-allow-cidr` | `0.8.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `django-ansible-base` | `2.6.20260804` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `django-ansible-base` | `2.6.20260824` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `django-ansible-base` | `2.7.0` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `django-auth-ldap` | `4.0.0` | hub-rhel9:/usr (python3.12) |
 | `django-auth-ldap` | `5.1.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
@@ -825,7 +821,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `djangorestframework-yaml` | `2.0.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `dnspython` | `2.6.1` | ee-supported-rhel9:/usr/local (python3.12) |
 | `dnspython` | `2.8.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `docutils` | `0.22.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `docutils` | `0.23` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `dogpile-cache` | `1.1.2` | ee-supported-rhel9:/usr/local (python3.12) |
 | `dpapi-ng` | `0.2.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `dpath` | `2.2.0` | de-supported-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
@@ -835,9 +831,9 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `drools-jpy` | `0.3.14` | de-supported-rhel9:/usr (python3.12) |
 | `dumb-init` | `1.2.5.post1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr/local (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), receptor-rhel9:/usr (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `durationpy` | `0.10` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
-| `dynaconf` | `3.2.11` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `dynaconf` | `3.2.12` | metrics-service-rhel9:/usr (python3.12) |
 | `dynaconf` | `3.2.13` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12) |
+| `dynaconf` | `3.3.5` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `ecdsa` | `0.18.0` | eda-controller-rhel9:/usr (python3.12) |
 | `einops` | `0.8.2` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `email-validator` | `2.3.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
@@ -848,10 +844,11 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `faiss-cpu` | `1.12.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `fastapi` | `0.136.1` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `fastuuid` | `0.14.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `filelock` | `3.13.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `filelock` | `3.13.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `filelock` | `3.20.3` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `filelock` | `3.25.2` | hub-rhel9:/usr (python3.12) |
 | `filelock` | `3.29.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
+| `filelock` | `3.32.3` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `fire` | `0.7.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `fire` | `0.7.1` | lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `flake8` | `6.1.0` | hub-rhel9:/usr (python3.12) |
@@ -860,11 +857,11 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `frozenlist` | `1.8.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `fsspec` | `2026.4.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `galaxy-importer` | `0.4.38` | hub-rhel9:/usr (python3.12) |
-| `galaxy-ng` | `4.11.12` | hub-rhel9:/usr (python3.12) |
+| `galaxy-ng` | `4.11.13` | hub-rhel9:/usr (python3.12) |
 | `gitdb` | `4.0.11` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `gitdb` | `4.0.12` | hub-rhel9:/usr (python3.12) |
 | `gitpython` | `3.1.42` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
-| `gitpython` | `3.1.50` | hub-rhel9:/usr (python3.12) |
+| `gitpython` | `3.1.59` | hub-rhel9:/usr (python3.12) |
 | `google-api-core` | `2.24.2` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `google-api-core` | `2.25.1` | ee-supported-rhel9:/usr/local (python3.12) |
 | `google-api-core` | `2.30.3` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
@@ -911,14 +908,13 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `idna` | `2.10` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), ee-supported-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
 | `idna` | `3.10` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), gateway-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `idna` | `3.11` | hub-rhel9:/usr (python3.12), metrics-service-rhel9:/usr (python3.12) |
-| `idna` | `3.18` | de-supported-rhel9:/usr/local (python3.12) |
+| `idna` | `3.19` | de-supported-rhel9:/usr/local (python3.12) |
 | `idna` | `3.4` | eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr (python3.12), ee-supported-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr (python3.12), mcp-tools-rhel9:/usr (python3.12) |
 | `importlib-metadata` | `6.0.1` | hub-rhel9:/usr (python3.12) |
 | `importlib-metadata` | `6.2.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `importlib-metadata` | `7.1.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `importlib-metadata` | `8.5.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `importlib-metadata` | `8.7.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `importlib-metadata` | `9.0.0` | ee-minimal-rhel9:/usr/local (python3.12) |
 | `incremental` | `24.7.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `inflect` | `7.0.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `inflection` | `0.5.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
@@ -953,16 +949,15 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `jsonpatch` | `1.32` | ee-supported-rhel9:/usr/local (python3.12) |
 | `jsonpath-ng` | `1.8.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `jsonpointer` | `2.1` | ee-supported-rhel9:/usr/local (python3.12) |
-| `jsonschema` | `4.17.3` | eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `jsonschema` | `4.17.3` | eda-controller-rhel9:/usr (python3.12) |
 | `jsonschema` | `4.21.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12) |
 | `jsonschema` | `4.23.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `jsonschema` | `4.24.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `jsonschema` | `4.25.1` | de-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `jsonschema` | `4.25.1` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `jsonschema-specifications` | `2023.12.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `jsonschema-specifications` | `2025.4.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `jsonschema-specifications` | `2025.9.1` | de-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
-| `jwcrypto` | `1.5.4` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
-| `jwcrypto` | `1.5.7` | lightspeed-rhel9:/var/www/venv (python3.12) |
+| `jsonschema-specifications` | `2025.9.1` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `jwcrypto` | `1.5.7` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `jwcrypto` | `1.5.8` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `jxmlease` | `1.0.3` | ee-supported-rhel9:/usr/local (python3.12) |
 | `kafka-python-ng` | `2.2.3` | de-supported-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
@@ -989,20 +984,19 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `lxml` | `5.3.0` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `lxml` | `6.0.2` | hub-rhel9:/usr (python3.12) |
 | `markdown` | `3.10.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12) |
-| `markdown-it-py` | `3.0.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `markdown-it-py` | `4.2.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
+| `markdown-it-py` | `4.2.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `markupsafe` | `2.1.3` | eda-controller-rhel9:/usr (python3.12) |
-| `markupsafe` | `2.1.5` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `markupsafe` | `2.1.5` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `markupsafe` | `3.0.2` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `markupsafe` | `3.0.3` | de-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
+| `markupsafe` | `3.0.3` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `marshmallow` | `3.26.2` | hub-rhel9:/usr (python3.12) |
 | `matplotlib-inline` | `0.1.7` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `mccabe` | `0.7.0` | hub-rhel9:/usr (python3.12) |
-| `mcp` | `1.26.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `mcp` | `1.28.1` | mcp-tools-rhel9:/usr/local (python3.12) |
+| `mcp` | `1.29.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `mdurl` | `0.1.2` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `metrics-service` | `1.0.0` | metrics-service-rhel9:/usr (python3.12) |
-| `metrics-utility` | `0.7.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `metrics-utility` | `0.7.7` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `microsoft-kiota-abstractions` | `1.3.3` | ee-supported-rhel9:/usr/local (python3.12) |
 | `microsoft-kiota-authentication-azure` | `1.0.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `microsoft-kiota-http` | `1.3.1` | ee-supported-rhel9:/usr/local (python3.12) |
@@ -1016,7 +1010,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `mpmath` | `1.3.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `msal` | `1.32.3` | eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `msal` | `1.35.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
-| `msal` | `1.36.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
+| `msal` | `1.37.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `msal-extensions` | `1.1.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `msal-extensions` | `1.2.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `msal-extensions` | `1.3.1` | eda-controller-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
@@ -1032,9 +1026,8 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `multidict` | `6.7.1` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `munch` | `2.5.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `mypy` | `1.19.1` | hub-rhel9:/usr (python3.12) |
-| `mypy-extensions` | `1.0.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `mypy-extensions` | `1.1.0` | hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
-| `ncclient` | `0.6.15` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `mypy-extensions` | `1.1.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
+| `ncclient` | `0.7.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `netaddr` | `0.8.0` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `netaddr` | `1.2.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `netaddr` | `1.3.0` | ee-supported-rhel9:/usr/local (python3.12) |
@@ -1055,8 +1048,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `odfpy` | `1.4.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `opa-python-client` | `2.0.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `openai` | `2.24.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `openpyxl` | `3.1.2` | metrics-service-rhel9:/usr (python3.12) |
-| `openpyxl` | `3.1.5` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
+| `openpyxl` | `3.1.5` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `openshift` | `0.13.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `openstacksdk` | `0.56.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `opentelemetry-api` | `1.24.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
@@ -1096,15 +1088,15 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `ovirt-engine-sdk-python` | `4.5.2` | ee-supported-rhel9:/usr/local (python3.12) |
 | `ovirt-imageio` | `2.4.6` | ee-supported-rhel9:/usr/local (python3.12) |
 | `packaging` | `23.2` | ee-supported-rhel9:/usr (python3.12) |
-| `packaging` | `24.2` | eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
+| `packaging` | `24.2` | eda-controller-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12) |
 | `packaging` | `25.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `packaging` | `26.0` | metrics-service-rhel9:/usr (python3.12) |
-| `packaging` | `26.2` | de-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12), receptor-rhel9:/usr (python3.12) |
-| `pandas` | `2.2.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
+| `packaging` | `26.2` | lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
+| `packaging` | `26.3` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), receptor-rhel9:/usr (python3.12) |
 | `pandas` | `2.3.2` | ee-supported-rhel9:/usr/local (python3.12) |
 | `pandas` | `3.0.1` | metrics-service-rhel9:/usr (python3.12) |
-| `pandas` | `3.0.3` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `paramiko` | `3.4.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `pandas` | `3.0.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
+| `paramiko` | `3.5.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `parsley` | `1.3` | hub-rhel9:/usr (python3.12) |
 | `parso` | `0.8.4` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `pathspec` | `0.12.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
@@ -1124,10 +1116,10 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `pip` | `23.2.1` | controller-rhel9:/usr (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr (python3.12), ee-supported-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr (python3.12), lightspeed-rhel9:/usr (python3.12), mcp-tools-rhel9:/usr (python3.12), receptor-rhel9:/usr (python3.12) |
 | `pip` | `25.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `pip` | `26.0.1` | metrics-service-rhel9:/usr (python3.12) |
-| `pip` | `26.2` | de-supported-rhel9:/usr/local (python3.12) |
+| `pip` | `26.2.1` | de-supported-rhel9:/usr/local (python3.12) |
 | `pkgconfig` | `1.5.5` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12) |
 | `pkginfo` | `1.7.0` | ee-supported-rhel9:/usr/local (python3.12) |
-| `platformdirs` | `4.1.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `platformdirs` | `4.11.3` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `platformdirs` | `4.3.8` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `platformdirs` | `4.9.4` | hub-rhel9:/usr (python3.12) |
 | `ply` | `3.11` | de-supported-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr (python3.12), ee-supported-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr (python3.12), mcp-tools-rhel9:/usr (python3.12) |
@@ -1176,8 +1168,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `py-deviceid` | `0.1.1` | ee-supported-rhel9:/usr/local (python3.12) |
 | `pyaml` | `26.2.1` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `pyang` | `2.5.3` | ee-supported-rhel9:/usr/local (python3.12) |
-| `pyasn1` | `0.6.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
-| `pyasn1` | `0.6.4` | hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
+| `pyasn1` | `0.6.4` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `pyasn1-modules` | `0.4.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `pycares` | `4.11.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12) |
 | `pycares` | `4.4.0` | ee-supported-rhel9:/usr/local (python3.12) |
@@ -1203,22 +1194,23 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `pygerduty` | `0.38.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `pygithub` | `2.6.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `pygithub` | `2.6.1` | eda-controller-rhel9:/usr (python3.12) |
-| `pygments` | `2.17.2` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `pygments` | `2.19.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `pygments` | `2.20.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
+| `pygments` | `2.20.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
+| `pygments` | `2.21.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `pygobject` | `3.40.1` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
 | `pygtrie` | `2.5.0` | hub-rhel9:/usr (python3.12) |
 | `pyinotify` | `0.9.6` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
 | `pyjwt` | `2.13.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `pykerberos` | `1.2.4` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `pynacl` | `1.5.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `pyopenssl` | `26.0.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
-| `pyopenssl` | `26.2.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
+| `pynacl` | `1.5.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12) |
+| `pynacl` | `1.6.2` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `pyopenssl` | `25.3.0` | ee-supported-rhel9:/usr/local (python3.12) |
+| `pyopenssl` | `26.0.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12) |
+| `pyopenssl` | `26.4.0` | ee-minimal-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `pyparsing` | `2.4.6` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `pyparsing` | `3.1.1` | hub-rhel9:/usr (python3.12) |
 | `pyparsing` | `3.2.3` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `pyparsing` | `3.3.2` | de-supported-rhel9:/usr/local (python3.12) |
-| `pypsrp` | `0.8.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `pypsrp` | `0.9.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `pyrad` | `2.4` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `pyrad` | `2.5.4` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `pyrfc3339` | `2.0.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
@@ -1226,7 +1218,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `pyrsistent` | `0.20.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `pysequoia` | `0.1.34` | hub-rhel9:/usr (python3.12) |
 | `pysocks` | `1.7.1` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr (python3.9), ee-supported-rhel9:/usr/local (python3.12), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
-| `pyspnego` | `0.10.2` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `pyspnego` | `0.12.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `python-daemon` | `3.1.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), de-supported-rhel9:/usr/local (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), receptor-rhel9:/usr (python3.12) |
 | `python-dateutil` | `2.8.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12) |
 | `python-dateutil` | `2.9.0.post0` | controller-rhel9:/usr (python3.9), de-supported-rhel9:/usr/local (python3.12), eda-controller-ui-rhel9:/usr (python3.9), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), hub-web-rhel9:/usr (python3.9), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
@@ -1237,8 +1229,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `python-ipware` | `3.0.0` | hub-rhel9:/usr (python3.12) |
 | `python-ldap` | `3.4.4` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `python-ldap` | `3.4.5` | gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12) |
-| `python-multipart` | `0.0.27` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `python-multipart` | `0.0.32` | mcp-tools-rhel9:/usr/local (python3.12) |
+| `python-multipart` | `0.0.32` | lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `python-string-utils` | `1.0.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `python-tss-sdk` | `1.2.3` | eda-controller-rhel9:/usr (python3.12) |
 | `python-tss-sdk` | `2.0.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
@@ -1248,14 +1239,14 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `pytz` | `2024.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `pytz` | `2025.2` | ee-supported-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `pyvmomi` | `8.0.3.0.1` | ee-supported-rhel9:/usr/local (python3.12) |
-| `pywinrm` | `0.4.3` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `pywinrm` | `0.5.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `pyyaml` | `5.4.1` | controller-rhel9:/usr (python3.9), ee-supported-rhel9:/usr (python3.9) |
 | `pyyaml` | `6.0.1` | controller-rhel9:/usr (python3.12), de-supported-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr (python3.12), ee-supported-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/usr (python3.12) |
 | `pyyaml` | `6.0.2` | eda-controller-rhel9:/usr (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
-| `pyyaml` | `6.0.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12), receptor-rhel9:/usr (python3.12), metrics-service-rhel9:/usr (python3.12) |
+| `pyyaml` | `6.0.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12), receptor-rhel9:/usr (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `pyzstd` | `0.15.10` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `receptorctl` | `1.6.5` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
-| `receptorctl` | `1.6.6` | ee-supported-rhel9:/usr/local (python3.12) |
+| `receptorctl` | `1.6.7` | ee-supported-rhel9:/usr/local (python3.12) |
 | `redis` | `4.5.4` | eda-controller-rhel9:/usr (python3.12) |
 | `redis` | `5.0.2` | hub-rhel9:/usr (python3.12) |
 | `redis` | `7.0.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
@@ -1266,19 +1257,17 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `regex` | `2026.5.9` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `requests` | `2.25.1` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), ee-supported-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
 | `requests` | `2.31.0` | eda-controller-rhel9:/usr (python3.12), ee-supported-rhel9:/usr (python3.12), hub-rhel9:/usr (python3.12) |
-| `requests` | `2.32.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), gateway-rhel9:/usr (python3.12) |
+| `requests` | `2.32.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), gateway-rhel9:/usr (python3.12) |
 | `requests` | `2.32.5` | metrics-service-rhel9:/usr (python3.12) |
 | `requests` | `2.33.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `requests` | `2.34.2` | de-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
+| `requests` | `2.34.2` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `requests-credssp` | `2.0.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `requests-ntlm` | `1.2.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `requests-ntlm` | `1.3.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `requests-oauthlib` | `1.3.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12) |
 | `requests-oauthlib` | `2.0.0` | ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `requestsexceptions` | `1.4.0` | ee-supported-rhel9:/usr/local (python3.12) |
-| `resolvelib` | `1.0.1` | de-supported-rhel9:/usr/local (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
-| `resolvelib` | `1.2.1` | hub-rhel9:/usr (python3.12) |
-| `rich` | `13.7.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `rich` | `15.0.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
+| `resolvelib` | `1.0.1` | de-supported-rhel9:/usr/local (python3.12), eda-controller-rhel9:/usr (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
+| `rich` | `15.0.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `rpds-py` | `0.18.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `rpds-py` | `0.24.0` | de-supported-rhel9:/usr/local (python3.12), ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12), lightspeed-rhel9:/var/www/venv (python3.12), mcp-tools-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `rpds-py` | `0.30.0` | hub-rhel9:/usr (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
@@ -1288,11 +1277,9 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `rsa` | `4.9` | eda-controller-rhel9:/usr (python3.12) |
 | `rsa` | `4.9.1` | ee-supported-rhel9:/usr/local (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `ruamel-yaml` | `0.18.12` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `ruamel-yaml` | `0.18.15` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `ruamel-yaml` | `0.19.1` | hub-rhel9:/usr (python3.12) |
+| `ruamel-yaml` | `0.19.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
 | `ruamel-yaml-clib` | `0.2.12` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `ruamel-yaml-clib` | `0.2.15` | hub-rhel9:/usr (python3.12) |
-| `ruamel-yaml-clib` | `0.2.8` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `ruamel-yaml-clib` | `0.2.15` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
 | `s3transfer` | `0.10.4` | ee-supported-rhel9:/usr/local (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `s3transfer` | `0.13.0` | eda-controller-rhel9:/usr (python3.12) |
 | `s3transfer` | `0.16.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), hub-rhel9:/usr (python3.12) |
@@ -1342,14 +1329,13 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `starlette` | `1.3.1` | lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `std-uritemplate` | `1.0.2` | ee-supported-rhel9:/usr/local (python3.12) |
 | `stevedore` | `3.3.3` | ee-supported-rhel9:/usr/local (python3.12) |
-| `subprocess-tee` | `0.4.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
-| `subprocess-tee` | `0.4.2` | hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
+| `subprocess-tee` | `0.4.2` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `subscription-manager` | `1.29.50` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
 | `supervisor` | `4.2.5` | lightspeed-rhel9:/usr/local (python3.12) |
 | `supervisor` | `4.3.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), gateway-rhel9:/usr (python3.12), metrics-service-rhel9:/usr (python3.12) |
 | `sympy` | `1.14.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `systemd-python` | `234` | controller-rhel9:/usr (python3.9), eda-controller-ui-rhel9:/usr (python3.9), hub-web-rhel9:/usr (python3.9), pcp:/usr (python3.9), postgresql-15:/usr (python3.9), redis-6:/usr (python3.9) |
-| `tablib` | `3.8.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
+| `tablib` | `3.10.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `tablib` | `3.9.0` | hub-rhel9:/usr (python3.12) |
 | `tabulate` | `0.10.0` | gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
 | `tabulate` | `0.9.0` | ee-supported-rhel9:/usr/local (python3.12) |
@@ -1371,8 +1357,8 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `transformers` | `5.5.3` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `ttp` | `0.6.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `twilio` | `8.13.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
-| `twisted` | `24.11.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `twisted` | `24.7.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12) |
+| `twisted` | `26.4.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `txaio` | `23.1.1` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), eda-controller-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `typer` | `0.23.1` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `typer` | `0.26.8` | mcp-tools-rhel9:/usr/local (python3.12) |
@@ -1383,7 +1369,6 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `typing-inspection` | `0.4.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `typing-inspection` | `0.4.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12), mcp-tools-rhel9:/usr/local (python3.12) |
 | `tzdata` | `2024.1` | ee-supported-rhel9:/usr/local (python3.12) |
-| `tzdata` | `2025.3` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `tzdata` | `2026.3` | eda-controller-rhel9:/usr (python3.12) |
 | `tzlocal` | `5.3.1` | metrics-service-rhel9:/usr (python3.12) |
 | `uamqp` | `1.6.8` | ee-supported-rhel9:/usr (python3.12) |
@@ -1411,7 +1396,7 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `watchdog` | `6.0.0` | de-supported-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `wcmatch` | `10.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `wcmatch` | `10.1` | hub-rhel9:/usr (python3.12) |
-| `wcmatch` | `8.5` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `wcmatch` | `11.0.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `wcwidth` | `0.2.13` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `wcwidth` | `0.7.0` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `websocket-client` | `1.5.1` | eda-controller-rhel9:/usr (python3.12) |
@@ -1429,22 +1414,20 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | `xlrd` | `2.0.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `xlwt` | `1.3.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `xmlsec` | `1.3.13` | controller-rhel9:/var/lib/awx/venv/awx (python3.12), gateway-rhel9:/opt/aap-gateway/venv (python3.12) |
-| `xmltodict` | `0.13.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
+| `xmltodict` | `1.0.4` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `xxhash` | `3.4.1` | eda-controller-rhel9:/usr (python3.12) |
 | `xxhash` | `3.5.0` | ee-supported-rhel9:/usr/local (python3.12) |
 | `xxhash` | `3.8.1` | de-supported-rhel9:/usr/local (python3.12) |
-| `yamllint` | `1.35.1` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `yamllint` | `1.37.1` | lightspeed-rhel9:/var/www/venv (python3.12) |
-| `yamllint` | `1.38.0` | hub-rhel9:/usr (python3.12) |
+| `yamllint` | `1.38.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12) |
 | `yarl` | `1.17.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `yarl` | `1.18.3` | hub-rhel9:/usr (python3.12) |
 | `yarl` | `1.20.0` | lightspeed-rhel9:/var/www/venv (python3.12) |
 | `yarl` | `1.23.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12), lightspeed-chatbot-rhel9:/usr/local (python3.12) |
 | `yarl` | `1.24.5` | de-supported-rhel9:/usr/local (python3.12) |
 | `zipp` | `3.17.0` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
-| `zipp` | `3.23.0` | hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
+| `zipp` | `3.23.0` | ee-supported-rhel9:/usr/local (python3.12), hub-rhel9:/usr (python3.12), lightspeed-rhel9:/var/www/venv (python3.12) |
 | `zipp` | `3.23.1` | lightspeed-chatbot-rhel9:/usr/local (python3.12) |
-| `zipp` | `4.1.0` | ee-minimal-rhel9:/usr/local (python3.12), ee-supported-rhel9:/usr/local (python3.12) |
 | `zope-interface` | `6.0` | eda-controller-rhel9:/usr (python3.12) |
 | `zope-interface` | `6.2` | controller-rhel9:/var/lib/awx/venv/awx (python3.12) |
 | `zope-interface` | `7.2` | lightspeed-rhel9:/var/www/venv (python3.12) |
@@ -1458,9 +1441,9 @@ Every Python distribution found in any image (`image:environment prefix (python)
 | Image | `registry.redhat.io/ansible-automation-platform-26/controller-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/controller-rhel9.tar.gz` |
-| Labels `version` / `release` | `4.7.15` / `1785339117` |
-| Image ID | `sha256:343d422f248ceccf6f57afff6461308042d34b534987a930645011e8aa9981a1` |
-| Build date | 2026-08-03T10:42:48Z |
+| Labels `version` / `release` | `4.7.16` / `1786987521` |
+| Image ID | `sha256:331d33076034aa6d6f3de6030022945a7aee24f2f673e03393ad402fad729456` |
+| Build date | 2026-08-20T16:36:17Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9, 3.12 |
@@ -1487,7 +1470,7 @@ cracklib-dicts 2.9.6-28.el9
 crontabs 1.11-27.20190603git.el9_0
 crun 1.27-1.el9_8
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -1508,14 +1491,14 @@ gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
 git-core 2.52.0-1.el9
 git-lfs 3.7.1-4.el9_8.2
-glib2 2.68.4-19.el9_8.2
+glib2 2.68.4-19.el9_8.9
 glibc 2.34-275.el9_8
 glibc-common 2.34-275.el9_8
 glibc-langpack-en 2.34-275.el9_8
 glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -1538,7 +1521,7 @@ langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -1548,7 +1531,7 @@ libcap-ng 0.8.2-7.el9
 libcbor 0.7.0-5.el9
 libcom_err 1.46.5-8.el9
 libcomps 0.1.18-1.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libdnf-plugin-subscription-manager 1.29.50-1.el9
@@ -1561,7 +1544,7 @@ libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libfido2 1.13.0-2.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
@@ -1570,7 +1553,7 @@ libksba 1.5.1-7.el9
 libmnl 1.0.4-16.el9_4
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpwquality 1.4.4-8.el9
@@ -1621,8 +1604,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 passwd 0.80-12.el9
 pcre 8.44-4.el9
@@ -1633,7 +1616,7 @@ popt 1.18-8.el9
 postgresql 15.18-1.module+el9.8.0+24358+32c5830e
 postgresql-private-libs 15.18-1.module+el9.8.0+24358+32c5830e
 psmisc 23.4-3.el9
-python3 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
 python3-chardet 4.0.0-5.el9
 python3-cloud-what 1.29.50-1.el9
 python3-dateutil 2.9.0.post0-1.el9_7
@@ -1645,13 +1628,13 @@ python3-gobject-base 3.40.1-6.el9
 python3-gobject-base-noarch 3.40.1-6.el9
 python3-gpg 1.15.1-6.el9
 python3-hawkey 0.69.0-18.el9
-python3-idna 2.10-7.el9_4.1
+python3-idna 2.10-8.el9_8
 python3-iniparse 0.4-45.el9
 python3-inotify 0.9.6-25.el9
 python3-libcomps 0.1.18-1.el9
 python3-libdnf 0.69.0-18.el9
 python3-librepo 1.19.0-1.el9
-python3-libs 3.9.25-7.el9_8.2
+python3-libs 3.9.25-7.el9_8.3
 python3-libselinux 3.6-3.el9
 python3-libsemanage 3.6-5.el9_6
 python3-pexpect 4.8.0-7.el9
@@ -1699,7 +1682,7 @@ systemd-libs 252-67.el9_8.4
 systemd-pam 252-67.el9_8.4
 systemd-rpm-macros 252-67.el9_8.4
 tpm2-tss 3.2.3-1.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 usermode 1.114-7.el9
 utf8proc 2.6.1-4.el9
 util-linux 2.37.4-25.el9
@@ -1754,14 +1737,14 @@ urllib3 1.26.5
 
 </details>
 
-<details><summary>Python packages: /var/lib/awx/venv/awx (python3.12) (193)</summary>
+<details><summary>Python packages: /var/lib/awx/venv/awx (python3.12) (192)</summary>
 
 ```text
 adal 1.2.7
 aiodns 3.6.1
 aiofiles 24.1.0
 aiohappyeyeballs 2.6.1
-aiohttp 3.14.1
+aiohttp 3.14.3
 aiohttp_retry 2.8.3
 aiosignal 1.4.0
 annotated-types 0.6.0
@@ -1774,7 +1757,7 @@ attrs 23.2.0
 autobahn 23.6.2
 autocommand 2.2.2
 Automat 22.10.0
-awx 4.7.15
+awx 4.7.16
 azure-common 1.1.28
 azure-core 1.30.0
 azure-identity 1.15.0
@@ -1795,13 +1778,13 @@ charset-normalizer 3.3.2
 click 8.3.3
 constantly 23.10.4
 cryptography 46.0.7
-daphne 4.2.1
+daphne 4.2.2
 defusedxml 0.7.1
 Deprecated 1.2.14
 dispatcherd 2026.1.27
 distro 1.9.0
 Django 5.2.12
-django-ansible-base 2.6.20260804
+django-ansible-base 2.6.20260824
 django-auth-ldap 5.1.0
 django-cors-headers 4.3.1
 django-crum 0.7.9
@@ -1849,13 +1832,13 @@ jq 1.8.0
 JSON-log-formatter 0.5.2
 jsonschema 4.21.1
 jsonschema-specifications 2023.12.1
-jwcrypto 1.5.4
+jwcrypto 1.5.7
 kubernetes 36.0.2
 lockfile 0.12.2
 lxml 4.9.4
 Markdown 3.10.2
 MarkupSafe 2.1.5
-metrics_utility 0.7.3
+metrics_utility 0.7.7
 more-itertools 10.2.0
 msal 1.35.1
 msal-extensions 1.1.0
@@ -1880,7 +1863,7 @@ opentelemetry-proto 1.24.0
 opentelemetry-sdk 1.24.0
 opentelemetry-semantic-conventions 0.45b0
 packaging 25.0
-pandas 2.2.3
+pandas 3.0.3
 pbr 6.0.0
 pexpect 4.7.0
 pip 25.3
@@ -1892,7 +1875,7 @@ protobuf 4.25.8
 psutil 5.9.8
 psycopg 3.3.3
 ptyprocess 0.7.0
-pyasn1 0.6.3
+pyasn1 0.6.4
 pyasn1_modules 0.4.2
 pycares 4.11.0
 pycparser 2.21
@@ -1939,7 +1922,6 @@ Twisted 24.7.0
 txaio 23.1.1
 typing-inspection 0.4.2
 typing_extensions 4.15.0
-tzdata 2025.3
 uritemplate 4.2.0
 urllib3 2.7.0
 uWSGI 2.0.28
@@ -1971,9 +1953,9 @@ redhat.indirect_accounting 1.0.0
 | Image | `registry.redhat.io/ansible-automation-platform-26/de-supported-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/de-supported-rhel9.tar.gz` |
-| Labels `version` / `release` | `1.2.2` / `1784705586` |
-| Image ID | `sha256:544c26ab04ab12c704bf70307d2a0207933015afb1b1b1d09c5020042a4f3c62` |
-| Build date | 2026-08-02T05:50:12Z |
+| Labels `version` / `release` | `1.2.2` / `1786987521` |
+| Image ID | `sha256:d519fb4e123c0d21f41b12e3898029f78cb30c0f9cc46f30b9bd4c7e33cda086` |
+| Build date | 2026-08-20T11:48:51Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9, 3.12 |
@@ -1997,7 +1979,7 @@ cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
 crypto-policies-scripts 20260224-1.gitea0f072.el9_8
 cups-libs 2.3.3op2-39.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus-libs 1.12.20-8.el9
 dejavu-sans-fonts 2.37-18.el9
@@ -2009,20 +1991,20 @@ findutils 4.8.0-7.el9
 fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
 gpgme 1.15.1-6.el9
 grep 3.6-5.el9
 gzip 1.12-1.el9
-java-17-openjdk-headless 17.0.20.0.8-1.2.el9
+java-17-openjdk-headless 17.0.20.1.1-1.2.el9
 javapackages-filesystem 6.4.0-1.el9
 json-c 0.14-11.el9
 json-glib 1.6.6-1.el9
@@ -2034,28 +2016,28 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
 libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
 libevent 2.1.12-8.el9_4
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libkadm5 1.21.1-10.el9_8
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpq 13.23-3.el9_8
@@ -2094,26 +2076,26 @@ ncurses-base 6.2-12.20210508.el9
 ncurses-libs 6.2-12.20210508.el9
 nettle 3.10.1-1.el9
 npth 1.6-8.el9
-nspr 4.36.0-8.el9_4
-nss 3.112.0-8.el9_4
-nss-softokn 3.112.0-8.el9_4
-nss-softokn-freebl 3.112.0-8.el9_4
-nss-sysinit 3.112.0-8.el9_4
-nss-util 3.112.0-8.el9_4
+nspr 4.39.0-5.el9_6
+nss 3.124.0-5.el9_6
+nss-softokn 3.124.0-5.el9_6
+nss-softokn-freebl 3.124.0-5.el9_6
+nss-sysinit 3.124.0-5.el9_6
+nss-util 3.124.0-5.el9_6
 openldap 2.6.8-4.el9
-openssl 3.5.5-5.el9_8
+openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
-openssl-libs 3.5.5-5.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+openssl-libs 3.5.5-6.el9_8
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
 pcre2-syntax 10.40-6.el9
 popt 1.18-8.el9
-python3 3.9.25-7.el9_8.2
-python3-libs 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
+python3-libs 3.9.25-7.el9_8.3
 python3-pip-wheel 21.3.1-2.el9_8
 python3-setuptools-wheel 53.0.0-15.el9
 python3.12 3.12.13-3.el9_8.1
@@ -2137,8 +2119,8 @@ setup 2.13.7-10.el9
 shadow-utils 4.9-16.el9
 sqlite-libs 3.34.1-10.el9_8
 systemd-libs 252-67.el9_8.4
-tzdata 2026b-1.el9
-tzdata-java 2026b-1.el9
+tzdata 2026c-1.el9_8
+tzdata-java 2026c-1.el9_8
 xz-libs 5.2.5-8.el9_0
 zlib 1.2.11-40.el9
 ```
@@ -2177,13 +2159,13 @@ azure-core 1.41.0
 azure-servicebus 7.14.3
 botocore 1.43.56
 certifi 2026.7.22
-charset-normalizer 3.4.9
+charset-normalizer 3.5.1
 decorator 5.3.1
 dpath 2.2.0
 dumb-init 1.2.5.post1
 frozenlist 1.8.0
 gssapi 1.11.1
-idna 3.18
+idna 3.19
 isodate 0.7.2
 janus 1.2.0
 Jinja2 3.1.6
@@ -2194,9 +2176,9 @@ kafka-python-ng 2.2.3
 lockfile 0.12.2
 MarkupSafe 3.0.3
 multidict 6.7.1
-packaging 26.2
+packaging 26.3
 pexpect 4.9.0
-pip 26.2
+pip 26.2.1
 propcache 0.5.2
 psycopg 3.3.4
 psycopg-c 3.3.4
@@ -2241,9 +2223,9 @@ redhat.insights_eda 1.2.0
 | Image | `registry.redhat.io/ansible-automation-platform-26/eda-controller-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/eda-controller-rhel9.tar.gz` |
-| Labels `version` / `release` | `1.2.11` / `1785339117` |
-| Image ID | `sha256:0045a28392a0dd76ccbdc7a38979e66b4a58eed7af7c23b0d3dfaa1225a84fd4` |
-| Build date | 2026-08-02T01:10:38Z |
+| Labels `version` / `release` | `1.2.12` / `1786987521` |
+| Image ID | `sha256:66c07134ab1852f3629e0063de9fb61f4449c80d113dd6e7cbcb2251043c9578` |
+| Build date | 2026-08-18T02:44:03Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -2262,7 +2244,7 @@ coreutils-single 8.32-41.el9_8
 cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dejavu-sans-fonts 2.37-18.el9
 dnf-data 4.14.0-34.el9_8
@@ -2274,14 +2256,14 @@ fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
 git-core 2.52.0-1.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-langpack-en 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-langpack-en 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -2297,7 +2279,7 @@ langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -2305,7 +2287,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcbor 0.7.0-5.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
@@ -2315,13 +2297,13 @@ libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libfido2 1.13.0-2.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpq 13.23-3.el9_8
@@ -2364,8 +2346,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
@@ -2385,7 +2367,7 @@ setup 2.13.7-10.el9
 shadow-utils 4.9-16.el9
 sqlite-libs 3.34.1-10.el9_8
 systemd-libs 252-67.el9_8.4
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 util-linux 2.37.4-25.el9
 util-linux-core 2.37.4-25.el9
 xz-libs 5.2.5-8.el9_0
@@ -2397,7 +2379,7 @@ zlib 1.2.11-40.el9
 <details><summary>Python packages: /usr (python3.12) (108)</summary>
 
 ```text
-aap-eda 1.2.11
+aap-eda 1.2.12
 adal 1.2.7
 ansible-core 2.16.19
 ansible-runner 2.4.1
@@ -2429,7 +2411,7 @@ Deprecated 1.2.18
 dispatcherd 2025.5.19
 distro 1.9.0
 Django 5.2.9
-django-ansible-base 2.6.20260804
+django-ansible-base 2.6.20260824
 django-crum 0.7.9
 django-filter 25.2
 django-flags 5.0.13
@@ -2467,7 +2449,7 @@ podman 5.4.0.1
 psycopg 3.2.7
 psycopg-c 3.2.7
 ptyprocess 0.7.0
-pyasn1 0.6.3
+pyasn1 0.6.4
 pyasn1_modules 0.4.2
 pycparser 2.21
 pydantic 1.10.18
@@ -2518,9 +2500,9 @@ zope.interface 6.0
 | Image | `registry.redhat.io/ansible-automation-platform-26/eda-controller-ui-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/eda-controller-ui-rhel9.tar.gz` |
-| Labels `version` / `release` | `1.2.11` / `1785716954` |
-| Image ID | `sha256:874f8ad16c02bd06d2ec484d7f656c78e63bc61fe840e00116145e31d8e4dfe5` |
-| Build date | 2026-08-03T04:14:29Z |
+| Labels `version` / `release` | `1.2.12` / `1787065328` |
+| Image ID | `sha256:085e1d4da621c56b94f7f4a30292950026339a1646675ba00b5795469e9fb540` |
+| Build date | 2026-08-19T00:17:03Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9 |
@@ -2535,7 +2517,7 @@ attr 2.5.1-3.el9
 audit-libs 3.1.5-8.el9
 basesystem 11-13.el9
 bash 5.1.8-9.el9
-bsdtar 3.5.3-9.el9_7
+bsdtar 3.5.3-11.el9_8
 bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
@@ -2543,7 +2525,7 @@ cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
 crypto-policies-scripts 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -2570,15 +2552,15 @@ gdb-gdbserver 16.3-3.el9
 gdbm-libs 1.23-1.el9
 gettext 0.21-8.el9
 gettext-libs 0.21-8.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-langpack-en 2.34-274.el9_8
-glibc-locale-source 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-langpack-en 2.34-275.el9_8
+glibc-locale-source 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -2607,7 +2589,7 @@ libX11-common 1.8.12-1.el9
 libXau 1.0.9-8.el9
 libXpm 3.5.13-10.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -2617,7 +2599,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
 libcomps 0.1.18-1.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libdnf-plugin-subscription-manager 1.29.50-1.el9
@@ -2626,7 +2608,7 @@ libevent 2.1.12-8.el9_4
 libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
@@ -2635,7 +2617,7 @@ libksba 1.5.1-7.el9
 libmnl 1.0.4-16.el9_4
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libpipeline 1.5.3-4.el9
 libpng 1.6.37-15.el9_8.2
 libpwquality 1.4.4-8.el9
@@ -2690,8 +2672,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 passwd 0.80-12.el9
 pcre 8.44-4.el9
@@ -2757,7 +2739,7 @@ perl-vars 1.05-481.1.el9_6
 popt 1.18-8.el9
 procps-ng 3.3.17-14.el9
 psmisc 23.4-3.el9
-python3 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
 python3-chardet 4.0.0-5.el9
 python3-cloud-what 1.29.50-1.el9
 python3-dateutil 2.9.0.post0-1.el9_7
@@ -2769,13 +2751,13 @@ python3-gobject-base 3.40.1-6.el9
 python3-gobject-base-noarch 3.40.1-6.el9
 python3-gpg 1.15.1-6.el9
 python3-hawkey 0.69.0-18.el9
-python3-idna 2.10-7.el9_4.1
+python3-idna 2.10-8.el9_8
 python3-iniparse 0.4-45.el9
 python3-inotify 0.9.6-25.el9
 python3-libcomps 0.1.18-1.el9
 python3-libdnf 0.69.0-18.el9
 python3-librepo 1.19.0-1.el9
-python3-libs 3.9.25-7.el9_8.2
+python3-libs 3.9.25-7.el9_8.3
 python3-pip-wheel 21.3.1-2.el9_8
 python3-pysocks 1.7.1-12.el9
 python3-requests 2.25.1-10.el9_6
@@ -2809,7 +2791,7 @@ systemd-rpm-macros 252-67.el9_8.4
 tar 1.34-11.el9
 tcl 8.6.10-7.el9
 tpm2-tss 3.2.3-1.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 unzip 6.0-60.el9
 usermode 1.114-7.el9
 util-linux 2.37.4-25.el9
@@ -2861,9 +2843,9 @@ urllib3 1.26.5
 | Image | `registry.redhat.io/ansible-automation-platform-26/ee-minimal-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/ee-minimal-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.0.0` / `1785339117` |
-| Image ID | `sha256:7ecbfb78234fdca17a8ffcd28ea3e0957bb411604cdc26ae64cdceafb0cbcc7f` |
-| Build date | 2026-08-03T17:46:18Z |
+| Labels `version` / `release` | `2.0.0` / `1786987521` |
+| Image ID | `sha256:1f7e2409905874609c58ec4226a51d82025e8a572335ebcbc031e1e0701f1509` |
+| Build date | 2026-08-20T06:26:49Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -2884,7 +2866,7 @@ coreutils-single 8.32-41.el9_8
 cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dejavu-sans-fonts 2.37-18.el9
 dnf-data 4.14.0-34.el9_8
@@ -2896,14 +2878,14 @@ fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
 git-core 2.52.0-1.el9
-glib2 2.68.4-19.el9_8.2
+glib2 2.68.4-19.el9_8.9
 glibc 2.34-275.el9_8
 glibc-common 2.34-275.el9_8
 glibc-langpack-en 2.34-275.el9_8
 glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -2922,7 +2904,7 @@ langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -2930,7 +2912,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcbor 0.7.0-5.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
@@ -2940,14 +2922,14 @@ libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libfido2 1.13.0-2.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libkadm5 1.21.1-10.el9_8
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpkgconf 1.7.3-10.el9
@@ -2995,8 +2977,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
@@ -3087,7 +3069,7 @@ sqlite-libs 3.34.1-10.el9_8
 sshpass 1.09-4.el9
 systemd-libs 252-67.el9_8.4
 tar 1.34-11.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 unzip 6.0-60.el9
 util-linux 2.37.4-25.el9
 util-linux-core 2.37.4-25.el9
@@ -3117,78 +3099,77 @@ urllib3 1.26.19
 
 </details>
 
-<details><summary>Python packages: /usr/local (python3.12) (69)</summary>
+<details><summary>Python packages: /usr/local (python3.12) (68)</summary>
 
 ```text
 aiohappyeyeballs 2.7.1
 aiohttp 3.14.3
 aiosignal 1.4.0
-ansible-compat 25.8.1
+ansible-compat 26.8.0
 ansible-core 2.16.19
-ansible-lint 25.8.2
+ansible-lint 26.8.0
 ansible-runner 2.4.3
-attrs 22.2.0
+attrs 26.1.0
 bcrypt 3.2.2
 black 26.5.1
-bracex 2.4
+bracex 3.0.1
 certifi 2038.12.31
-cffi 2.0.0
-click 8.1.7
-cryptography 46.0.7
-decorator 5.1.1
-docutils 0.22.1
+cffi 2.1.1
+click 8.4.2
+cryptography 50.0.0
+decorator 5.3.1
+distro 1.9.0
+docutils 0.23
 dumb-init 1.2.5.post1
-filelock 3.13.1
+filelock 3.32.3
 frozenlist 1.8.0
 gssapi 1.11.1
-importlib_metadata 9.0.0
 Jinja2 3.1.6
-jsonschema 4.17.3
+jsonschema 4.25.1
+jsonschema-specifications 2025.9.1
 krb5 0.9.0
 lockfile 0.12.2
-markdown-it-py 3.0.0
-MarkupSafe 2.1.5
+markdown-it-py 4.2.0
+MarkupSafe 3.0.3
 mdurl 0.1.2
 multidict 6.7.1
-mypy_extensions 1.0.0
-ncclient 0.6.15
-packaging 24.2
-paramiko 3.4.0
+mypy_extensions 1.1.0
+ncclient 0.7.1
+packaging 26.3
+paramiko 3.5.1
 pathspec 1.1.1
 pexpect 4.9.0
-platformdirs 4.1.0
+platformdirs 4.11.3
 propcache 0.4.1
 ptyprocess 0.7.0
-Pygments 2.17.2
+Pygments 2.21.0
 pykerberos 1.2.4
-PyNaCl 1.5.0
-pyOpenSSL 26.0.0
-pypsrp 0.8.1
+PyNaCl 1.6.2
+pyOpenSSL 26.4.0
+pypsrp 0.9.1
 pyrsistent 0.20.0
 PySocks 1.7.1
-pyspnego 0.10.2
+pyspnego 0.12.1
 python-daemon 3.1.2
 pytokens 0.4.1
-pywinrm 0.4.3
-PyYAML 6.0.3
+pywinrm 0.5.0
 referencing 0.37.0
-requests 2.32.3
+requests 2.34.2
 requests-credssp 2.0.0
-requests_ntlm 1.2.0
+requests_ntlm 1.3.0
 resolvelib 1.0.1
-rich 13.7.0
+rich 15.0.0
 rpds-py 0.24.0
-ruamel.yaml 0.18.15
-ruamel.yaml.clib 0.2.8
+ruamel.yaml 0.19.1
+ruamel.yaml.clib 0.2.15
 six 1.17.0
-subprocess-tee 0.4.1
+subprocess-tee 0.4.2
 toml 0.10.2
 typing_extensions 4.16.0
-wcmatch 8.5
-xmltodict 0.13.0
-yamllint 1.35.1
+wcmatch 11.0.1
+xmltodict 1.0.4
+yamllint 1.38.0
 yarl 1.23.0
-zipp 4.1.0
 ```
 
 </details>
@@ -3202,9 +3183,9 @@ zipp 4.1.0
 | Image | `registry.redhat.io/ansible-automation-platform-26/ee-supported-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/ee-supported-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.0.0` / `1785339117` |
-| Image ID | `sha256:fb1830d015cdeb3177d2da52dc893d5ec49281220b7ff2cd6ee6120a5ab5bfb6` |
-| Build date | 2026-08-03T17:17:16Z |
+| Labels `version` / `release` | `2.0.0` / `1786987521` |
+| Image ID | `sha256:539d58801bfe273b1c67b9b42680df556cfae77f1ed2b4b28354c205bbfcdf0f` |
+| Build date | 2026-08-20T09:15:57Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9, 3.12 |
@@ -3219,7 +3200,7 @@ apr 1.7.0-12.el9_3
 apr-util 1.6.1-23.el9
 apr-util-bdb 1.6.1-23.el9
 audit-libs 3.1.5-8.el9
-automation-controller-cli 4.7.15-2.el9ap
+automation-controller-cli 4.7.16-1.el9ap
 basesystem 11-13.el9
 bash 5.1.8-9.el9
 bash-completion 2.11-5.el9
@@ -3232,7 +3213,7 @@ coreutils-single 8.32-41.el9_8
 cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -3253,14 +3234,14 @@ gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
 git-core 2.52.0-1.el9
 git-lfs 3.7.1-4.el9_8.2
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-langpack-en 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-langpack-en 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -3281,7 +3262,7 @@ langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
 libaio 0.3.111-13.el9
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -3289,7 +3270,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcbor 0.7.0-5.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
@@ -3299,7 +3280,7 @@ libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libfido2 1.13.0-2.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgfortran 11.5.0-14.el9
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
@@ -3308,7 +3289,7 @@ libkadm5 1.21.1-10.el9_8
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpkgconf 1.7.3-10.el9
@@ -3362,15 +3343,15 @@ numactl-libs 2.0.19-3.el9
 openblas 0.3.29-1.el9
 openblas-openmp 0.3.29-1.el9
 openldap 2.6.8-4.el9
-openshift-clients 4.19.0-202605281656.p2.gb2a93a6.assembly.stream.el9
-openssh 9.9p1-7.el9_8
-openssh-clients 9.9p1-7.el9_8
+openshift-clients 4.19.0-202608111604.p2.gb2a93a6.assembly.stream.el9
+openssh 9.9p1-9.el9_8
+openssh-clients 9.9p1-9.el9_8
 openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
@@ -3437,10 +3418,10 @@ pkgconf-pkg-config 1.7.3-10.el9
 podman-remote 5.8.2-5.el9_8
 policycoreutils 3.6-5.el9
 popt 1.18-8.el9
-python3 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
 python3-chardet 4.0.0-5.el9
-python3-idna 2.10-7.el9_4.1
-python3-libs 3.9.25-7.el9_8.2
+python3-idna 2.10-8.el9_8
+python3-libs 3.9.25-7.el9_8.3
 python3-pexpect 4.8.0-7.el9
 python3-pip-wheel 21.3.1-2.el9_8
 python3-ptyprocess 0.6.0-12.el9
@@ -3492,7 +3473,7 @@ systemd-libs 252-67.el9_8.4
 systemd-pam 252-67.el9_8.4
 systemd-rpm-macros 252-67.el9_8.4
 tar 1.34-11.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 unzip 6.0-60.el9
 utf8proc 2.6.1-4.el9
 util-linux 2.37.4-25.el9
@@ -3508,7 +3489,7 @@ zstd 1.5.5-1.el9
 <details><summary>Python packages: /usr (python3.12) (17)</summary>
 
 ```text
-awxkit 4.7.15
+awxkit 4.7.16
 certifi 2023.5.7
 cffi 1.16.0
 charset-normalizer 3.3.0
@@ -3559,9 +3540,9 @@ aioitertools 0.11.0
 aiokafka 0.10.0
 aiosignal 1.4.0
 annotated-types 0.7.0
-ansible-compat 25.8.1
+ansible-compat 26.8.0
 ansible-core 2.16.19
-ansible-lint 25.8.2
+ansible-lint 26.8.0
 ansible-pylibssh 1.2.2
 ansible-runner 2.4.3
 ansible-sign 0.1.2
@@ -3570,7 +3551,7 @@ appdirs 1.4.4
 applicationinsights 0.11.10
 argcomplete 3.5.3
 async-timeout 5.0.1
-attrs 22.2.0
+attrs 26.1.0
 azure-cli-core 2.74.0
 azure-cli-telemetry 1.1.0
 azure-common 1.1.28
@@ -3632,25 +3613,25 @@ bcrypt 3.2.2
 black 26.5.1
 boto3 1.34.34
 botocore 1.34.34
-bracex 2.4
+bracex 3.0.1
 brotli 1.2.0
 cachetools 5.5.2
 certifi 2038.12.31
-cffi 2.0.0
+cffi 2.1.1
 chardet 5.2.0
 click 8.3.3
 cryptography 46.0.7
-decorator 5.1.1
+decorator 5.3.1
 Deprecated 1.2.14
 distlib 0.4.0
 distro 1.9.0
 dnspython 2.6.1
-docutils 0.22.1
+docutils 0.23
 dogpile.cache 1.1.2
 dpapi-ng 0.2.0
 dpath 2.2.0
 dumb-init 1.2.5.post1
-filelock 3.13.1
+filelock 3.32.3
 frozenlist 1.8.0
 google-api-core 2.25.1
 google-auth 2.40.3
@@ -3675,7 +3656,8 @@ Jinja2 3.1.6
 jmespath 1.0.1
 jsonpatch 1.32
 jsonpointer 2.1
-jsonschema 4.17.3
+jsonschema 4.25.1
+jsonschema-specifications 2025.9.1
 jxmlease 1.0.3
 kafka-python-ng 2.2.3
 keystoneauth1 4.3.1
@@ -3683,8 +3665,8 @@ knack 0.11.0
 krb5 0.9.0
 kubernetes 29.0.0
 lockfile 0.12.2
-markdown-it-py 3.0.0
-MarkupSafe 2.1.5
+markdown-it-py 4.2.0
+MarkupSafe 3.0.3
 mdurl 0.1.2
 microsoft-kiota-abstractions 1.3.3
 microsoft-kiota-authentication-azure 1.0.0
@@ -3702,8 +3684,8 @@ msrest 0.7.1
 msrestazure 0.6.4
 multidict 6.7.1
 munch 2.5.0
-mypy_extensions 1.0.0
-ncclient 0.6.15
+mypy_extensions 1.1.0
+ncclient 0.7.1
 netaddr 1.3.0
 netifaces 0.10.9
 nsx-policy-python-sdk 4.1.2.0.0
@@ -3720,15 +3702,15 @@ oras 0.2.37
 os-service-types 1.7.0
 ovirt-engine-sdk-python 4.5.2
 ovirt-imageio 2.4.6
-packaging 24.2
+packaging 26.3
 pandas 2.3.2
-paramiko 3.4.0
+paramiko 3.5.1
 pathspec 1.1.1
 pbr 7.0.1
 pendulum 3.0.0
 pexpect 4.9.0
 pkginfo 1.7.0
-platformdirs 4.1.0
+platformdirs 4.11.3
 portalocker 1.7.1
 propcache 0.4.1
 proto-plus 1.26.1
@@ -3738,42 +3720,41 @@ psycopg 3.3.3
 ptyprocess 0.7.0
 py-deviceid 0.1.1
 pyang 2.5.3
-pyasn1 0.6.3
+pyasn1 0.6.4
 pyasn1_modules 0.4.2
 pycares 4.4.0
 pycurl 7.45.3
 pydantic 2.12.0
 pydantic_core 2.41.1
-Pygments 2.17.2
+Pygments 2.21.0
 PyJWT 2.13.0
 pykerberos 1.2.4
-PyNaCl 1.5.0
-pyOpenSSL 26.0.0
-pypsrp 0.8.1
+PyNaCl 1.6.2
+pyOpenSSL 25.3.0
+pypsrp 0.9.1
 pyrsistent 0.20.0
 PySocks 1.7.1
-pyspnego 0.10.2
+pyspnego 0.12.1
 python-daemon 3.1.2
 python-dateutil 2.9.0.post0
 python-gnupg 0.5.6
 pytokens 0.4.1
 pytz 2025.2
 pyvmomi 8.0.3.0.1
-pywinrm 0.4.3
-PyYAML 6.0.3
-receptorctl 1.6.6
+pywinrm 0.5.0
+receptorctl 1.6.7
 referencing 0.37.0
-requests 2.32.3
+requests 2.34.2
 requests-credssp 2.0.0
 requests-oauthlib 2.0.0
-requests_ntlm 1.2.0
+requests_ntlm 1.3.0
 requestsexceptions 1.4.0
 resolvelib 1.0.1
-rich 13.7.0
+rich 15.0.0
 rpds-py 0.24.0
 rsa 4.9.1
-ruamel.yaml 0.18.15
-ruamel.yaml.clib 0.2.8
+ruamel.yaml 0.19.1
+ruamel.yaml.clib 0.2.15
 s3transfer 0.10.4
 sansldap 0.1.0
 scp 0.13.3
@@ -3781,7 +3762,7 @@ six 1.17.0
 sniffio 1.3.1
 std-uritemplate 1.0.2
 stevedore 3.3.3
-subprocess-tee 0.4.1
+subprocess-tee 0.4.2
 tabulate 0.9.0
 textfsm 0.4.1
 time-machine 2.14.2
@@ -3797,14 +3778,14 @@ vmwarecloud-aws 1.64.0
 vmwarecloud-draas 1.23.0
 vsphere-automation-sdk 1.86.0
 watchdog 6.0.0
-wcmatch 8.5
+wcmatch 11.0.1
 websocket-client 1.8.0
 wrapt 1.17.3
-xmltodict 0.13.0
+xmltodict 1.0.4
 xxhash 3.5.0
-yamllint 1.35.1
+yamllint 1.38.0
 yarl 1.23.0
-zipp 4.1.0
+zipp 3.23.0
 ```
 
 </details>
@@ -3813,7 +3794,7 @@ zipp 4.1.0
 
 ```text
 amazon.aws 9.5.1
-ansible.controller 4.7.15
+ansible.controller 4.7.16
 ansible.eda 2.11.0
 ansible.hub 1.1.0
 ansible.netcommon 8.1.0
@@ -3881,9 +3862,9 @@ vmware.vmware_rest 4.8.1
 | Image | `registry.redhat.io/ansible-automation-platform-26/gateway-proxy-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/gateway-proxy-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.6.6` / `1785339117` |
-| Image ID | `sha256:4c5cfacc930112098c7696d2daebf6cc6c42b8c2061aba79ef3743d7bf7a818d` |
-| Build date | 2026-08-03T09:07:53Z |
+| Labels `version` / `release` | `2.6.6` / `1786987521` |
+| Image ID | `sha256:019db584e6fa1b06aaa4780575540fee1ec82297e4bfbe30523593e575bf2a4e` |
+| Build date | 2026-08-19T17:19:10Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | N/A |
@@ -3894,7 +3875,7 @@ vmware.vmware_rest 4.8.1
 ```text
 alternatives 1.24-2.el9
 audit-libs 3.1.5-8.el9
-automation-gateway-config 2.6.20260804-1.el9ap
+automation-gateway-config 2.6.20260824-1.el9ap
 automation-gateway-proxy-server 2.6.17-2.el9ap
 basesystem 11-13.el9
 bash 5.1.8-9.el9
@@ -3902,7 +3883,7 @@ bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dejavu-sans-fonts 2.37-18.el9
 dnf-data 4.14.0-34.el9_8
@@ -3913,14 +3894,14 @@ findutils 4.8.0-7.el9
 fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
-glib2 2.68.4-19.el9_8.2
+glib2 2.68.4-19.el9_8.9
 glibc 2.34-275.el9_8
 glibc-common 2.34-275.el9_8
 glibc-langpack-en 2.34-275.el9_8
 glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -3934,25 +3915,25 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
 libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdnf 0.69.0-18.el9
 libevent 2.1.12-8.el9_4
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libpeas 1.30.0-4.el9
 librepo 1.19.0-1.el9
 libreport-filesystem 2.15.2-6.el9
@@ -3987,8 +3968,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
 pcre2-syntax 10.40-6.el9
@@ -4003,7 +3984,7 @@ setup 2.13.7-10.el9
 shadow-utils 4.9-16.el9
 sqlite-libs 3.34.1-10.el9_8
 systemd-libs 252-67.el9_8.4
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 xz-libs 5.2.5-8.el9_0
 zlib 1.2.11-40.el9
 ```
@@ -4019,9 +4000,9 @@ zlib 1.2.11-40.el9
 | Image | `registry.redhat.io/ansible-automation-platform-26/gateway-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/gateway-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.6.20260804` / `1785339117` |
-| Image ID | `sha256:6546a02ab87f72d31b53b33fad3bafae8af7d1b86e2be62f4669fb0509d7736d` |
-| Build date | 2026-08-03T18:00:20Z |
+| Labels `version` / `release` | `2.6.20260824` / `1786987521` |
+| Image ID | `sha256:215881346af11a64830cbbe99a97661bacdfe724d26391ba1c18db147aa498ff` |
+| Build date | 2026-08-20T09:55:51Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -4042,7 +4023,7 @@ coreutils-single 8.32-41.el9_8
 cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -4056,14 +4037,14 @@ findutils 4.8.0-7.el9
 fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-langpack-en 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-langpack-en 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -4079,14 +4060,14 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
 libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
@@ -4094,13 +4075,13 @@ libevent 2.1.12-8.el9_4
 libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpq 13.23-3.el9_8
@@ -4146,8 +4127,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
@@ -4172,7 +4153,7 @@ systemd 252-67.el9_8.4
 systemd-libs 252-67.el9_8.4
 systemd-pam 252-67.el9_8.4
 systemd-rpm-macros 252-67.el9_8.4
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 util-linux 2.37.4-25.el9
 util-linux-core 2.37.4-25.el9
 xmlsec1 1.2.29-13.el9
@@ -4186,7 +4167,7 @@ zlib 1.2.11-40.el9
 <details><summary>Python packages: /opt/aap-gateway/venv (python3.12) (65)</summary>
 
 ```text
-aap-gateway 2.6.20260804
+aap-gateway 2.6.20260824
 argon2-cffi 23.1.0
 argon2-cffi-bindings 21.2.0
 asgiref 3.8.1
@@ -4224,7 +4205,7 @@ persisting-theory 1.0
 protobuf 5.29.5
 psycopg 3.2.3
 psycopg-c 3.2.3
-pyasn1 0.6.3
+pyasn1 0.6.4
 pyasn1_modules 0.4.2
 pycparser 2.22
 PyJWT 2.13.0
@@ -4278,13 +4259,13 @@ urllib3 2.7.0
 | Image | `registry.redhat.io/ansible-automation-platform-26/hub-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/hub-rhel9.tar.gz` |
-| Labels `version` / `release` | `4.11.12` / `1785339117` |
-| Image ID | `sha256:3d0189fdfa4883aea1abbb02de7fb7441e2e37dc91f714e802288ffadb2d4005` |
-| Build date | 2026-08-03T10:38:57Z |
+| Labels `version` / `release` | `4.11.13` / `1786987521` |
+| Image ID | `sha256:eed001637fca683e0df6ea89025b9daab654eb426fb582dfe3638e671aa98d12` |
+| Build date | 2026-08-20T10:10:03Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
-| Ansible Core | 2.20.3 |
+| Ansible Core | 2.16.19 |
 
 <details><summary>RPM packages (152)</summary>
 
@@ -4302,7 +4283,7 @@ cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crun 1.27-1.el9_8
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dejavu-sans-fonts 2.37-18.el9
 dnf-data 4.14.0-34.el9_8
@@ -4316,14 +4297,14 @@ gdbm-libs 1.23-1.el9
 gettext 0.21-8.el9
 gettext-libs 0.21-8.el9
 git-core 2.52.0-1.el9
-glib2 2.68.4-19.el9_8.2
+glib2 2.68.4-19.el9_8.9
 glibc 2.34-275.el9_8
 glibc-common 2.34-275.el9_8
 glibc-langpack-en 2.34-275.el9_8
 glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -4339,7 +4320,7 @@ langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -4347,7 +4328,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcbor 0.7.0-5.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
@@ -4357,7 +4338,7 @@ libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libfido2 1.13.0-2.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
@@ -4365,7 +4346,7 @@ libjpeg-turbo 2.0.90-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpq 13.23-3.el9_8
@@ -4411,8 +4392,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
@@ -4435,7 +4416,7 @@ shadow-utils-subid 4.9-16.el9
 skopeo 1.22.2-7.el9_8
 sqlite-libs 3.34.1-10.el9_8
 systemd-libs 252-67.el9_8.4
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 util-linux 2.37.4-25.el9
 util-linux-core 2.37.4-25.el9
 xz-libs 5.2.5-8.el9_0
@@ -4451,11 +4432,11 @@ zlib 1.2.11-40.el9
 aiodns 3.2.0
 aiofiles 23.2.1
 aiohappyeyeballs 2.6.1
-aiohttp 3.14.1
+aiohttp 3.14.3
 aiosignal 1.4.0
 ansible-builder 3.1.1
 ansible-compat 25.12.1
-ansible-core 2.20.3
+ansible-core 2.16.19
 ansible-lint 26.3.0
 asgiref 3.11.1
 async-timeout 5.0.1
@@ -4480,8 +4461,8 @@ defusedxml 0.7.1
 Deprecated 1.3.1
 diff-match-patch 20241021
 distro 1.9.0
-Django 5.2.12
-django-ansible-base 2.6.20260804
+Django 5.2.17
+django-ansible-base 2.6.20260824
 django-auth-ldap 4.0.0
 django-automated-logging 6.2.2
 django-crum 0.7.9
@@ -4503,10 +4484,10 @@ dynaconf 3.2.13
 filelock 3.25.2
 flake8 6.1.0
 frozenlist 1.8.0
-galaxy-ng 4.11.12
+galaxy-ng 4.11.13
 galaxy_importer 0.4.38
 gitdb 4.0.12
-GitPython 3.1.50
+GitPython 3.1.59
 googleapis-common-protos 1.73.0
 grpcio 1.78.0
 gunicorn 23.0.0
@@ -4585,7 +4566,7 @@ redis 5.0.2
 referencing 0.37.0
 requests 2.31.0
 requests-oauthlib 2.0.0
-resolvelib 1.2.1
+resolvelib 1.0.1
 rpds-py 0.30.0
 ruamel.yaml 0.19.1
 ruamel.yaml.clib 0.2.15
@@ -4623,9 +4604,9 @@ zipp 3.23.0
 | Image | `registry.redhat.io/ansible-automation-platform-26/hub-web-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/hub-web-rhel9.tar.gz` |
-| Labels `version` / `release` | `4.11.12` / `1785716954` |
-| Image ID | `sha256:22b01d68df5b8d307eb281534b208399b5e1cf9f64f179b9830a6e84034361c3` |
-| Build date | 2026-08-03T11:34:24Z |
+| Labels `version` / `release` | `4.11.13` / `1787065328` |
+| Image ID | `sha256:4c2524e051f75729861fa061e3cf0eca2065aa06a4e640ad1faf70dc3e66c27e` |
+| Build date | 2026-08-20T11:08:54Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9 |
@@ -4640,7 +4621,7 @@ attr 2.5.1-3.el9
 audit-libs 3.1.5-8.el9
 basesystem 11-13.el9
 bash 5.1.8-9.el9
-bsdtar 3.5.3-9.el9_7
+bsdtar 3.5.3-11.el9_8
 bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
@@ -4648,7 +4629,7 @@ cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
 crypto-policies-scripts 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -4675,15 +4656,15 @@ gdb-gdbserver 16.3-3.el9
 gdbm-libs 1.23-1.el9
 gettext 0.21-8.el9
 gettext-libs 0.21-8.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-langpack-en 2.34-274.el9_8
-glibc-locale-source 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-langpack-en 2.34-275.el9_8
+glibc-locale-source 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -4712,7 +4693,7 @@ libX11-common 1.8.12-1.el9
 libXau 1.0.9-8.el9
 libXpm 3.5.13-10.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -4722,7 +4703,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
 libcomps 0.1.18-1.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libdnf-plugin-subscription-manager 1.29.50-1.el9
@@ -4731,7 +4712,7 @@ libevent 2.1.12-8.el9_4
 libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
@@ -4740,7 +4721,7 @@ libksba 1.5.1-7.el9
 libmnl 1.0.4-16.el9_4
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libpipeline 1.5.3-4.el9
 libpng 1.6.37-15.el9_8.2
 libpwquality 1.4.4-8.el9
@@ -4795,8 +4776,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 passwd 0.80-12.el9
 pcre 8.44-4.el9
@@ -4862,7 +4843,7 @@ perl-vars 1.05-481.1.el9_6
 popt 1.18-8.el9
 procps-ng 3.3.17-14.el9
 psmisc 23.4-3.el9
-python3 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
 python3-chardet 4.0.0-5.el9
 python3-cloud-what 1.29.50-1.el9
 python3-dateutil 2.9.0.post0-1.el9_7
@@ -4874,13 +4855,13 @@ python3-gobject-base 3.40.1-6.el9
 python3-gobject-base-noarch 3.40.1-6.el9
 python3-gpg 1.15.1-6.el9
 python3-hawkey 0.69.0-18.el9
-python3-idna 2.10-7.el9_4.1
+python3-idna 2.10-8.el9_8
 python3-iniparse 0.4-45.el9
 python3-inotify 0.9.6-25.el9
 python3-libcomps 0.1.18-1.el9
 python3-libdnf 0.69.0-18.el9
 python3-librepo 1.19.0-1.el9
-python3-libs 3.9.25-7.el9_8.2
+python3-libs 3.9.25-7.el9_8.3
 python3-pip-wheel 21.3.1-2.el9_8
 python3-pysocks 1.7.1-12.el9
 python3-requests 2.25.1-10.el9_6
@@ -4914,7 +4895,7 @@ systemd-rpm-macros 252-67.el9_8.4
 tar 1.34-11.el9
 tcl 8.6.10-7.el9
 tpm2-tss 3.2.3-1.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 unzip 6.0-60.el9
 usermode 1.114-7.el9
 util-linux 2.37.4-25.el9
@@ -4966,9 +4947,9 @@ urllib3 1.26.5
 | Image | `registry.redhat.io/ansible-automation-platform-26/lightspeed-chatbot-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/lightspeed-chatbot-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.6.20260723` / `1785339117` |
-| Image ID | `sha256:126fc9bad0066f93e7c8ab94cce2615896587a6f04e694d60ac07ad21eba5c4c` |
-| Build date | 2026-08-02T04:47:17Z |
+| Labels `version` / `release` | `2.6.20260806` / `1786987521` |
+| Image ID | `sha256:c951eea5b957824c176b2a4899bdf735051dc24f1d4a51828ead201d669d3364` |
+| Build date | 2026-08-18T12:15:30Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -4985,7 +4966,7 @@ bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dejavu-sans-fonts 2.37-18.el9
 diffutils 3.7-12.el9
@@ -5001,13 +4982,13 @@ flexiblas-openblas-openmp 3.0.4-9.el9
 fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -5023,20 +5004,20 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
 libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdnf 0.69.0-18.el9
 libedit 3.1-39.20210216cvs.el9
 libevent 2.1.12-8.el9_4
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgfortran 11.5.0-14.el9
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
@@ -5045,7 +5026,7 @@ libjpeg-turbo 2.0.90-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libomp 21.1.8-2.el9
 libpeas 1.30.0-4.el9
@@ -5090,8 +5071,8 @@ openldap 2.6.8-4.el9
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
 pcre2-syntax 10.40-6.el9
@@ -5118,7 +5099,7 @@ shadow-utils 4.9-16.el9
 sqlite-libs 3.34.1-10.el9_8
 systemd-libs 252-67.el9_8.4
 tar 1.34-11.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 xz-libs 5.2.5-8.el9_0
 zlib 1.2.11-40.el9
 ```
@@ -5144,7 +5125,7 @@ setuptools 68.2.2
 ```text
 a2a-sdk 0.3.26
 aiohappyeyeballs 2.6.1
-aiohttp 3.14.0
+aiohttp 3.14.3
 aiosignal 1.4.0
 aiosqlite 0.22.1
 annotated-doc 0.0.4
@@ -5160,7 +5141,7 @@ cachetools 7.1.1
 certifi 2038.12.31
 cffi 2.0.0
 click 8.1.8
-cryptography 46.0.7
+cryptography 50.0.0
 distro 1.9.0
 dnspython 2.8.0
 dumb-init 1.2.5.post1
@@ -5201,10 +5182,10 @@ llama_stack 0.4.3
 llama_stack_client 0.4.3
 markdown-it-py 4.2.0
 MarkupSafe 3.0.3
-mcp 1.26.0
+mcp 1.29.0
 mdurl 0.1.2
 mpmath 1.3.0
-msal 1.36.0
+msal 1.37.0
 msal-extensions 1.3.1
 multidict 6.7.1
 networkx 3.6.1
@@ -5236,7 +5217,7 @@ Pygments 2.20.0
 PyJWT 2.13.0
 python-dateutil 2.9.0.post0
 python-dotenv 1.2.2
-python-multipart 0.0.27
+python-multipart 0.0.32
 PyYAML 6.0.3
 referencing 0.37.0
 regex 2026.5.9
@@ -5286,9 +5267,9 @@ zipp 3.23.1
 | Image | `registry.redhat.io/ansible-automation-platform-26/lightspeed-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/lightspeed-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.6.20260804` / `1784705586` |
-| Image ID | `sha256:5adec51a758cd62dc2f0ddf0b1cac14981615f4d53f27ee2ee92f5b06bcdb617` |
-| Build date | 2026-08-03T16:42:40Z |
+| Labels `version` / `release` | `2.6.20260824` / `1784705586` |
+| Image ID | `sha256:9f1c908107b464b54962d31515f39096e2d1c689db975847363af36b77f21188` |
+| Build date | 2026-08-20T16:41:19Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -5415,10 +5396,10 @@ npth 1.6-8.el9
 openblas 0.3.29-1.el9
 openblas-openmp 0.3.29-1.el9
 openldap 2.6.8-4.el9
-openssl 3.5.5-5.el9_8
+openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
-openssl-libs 3.5.5-5.el9_8
+openssl-libs 3.5.5-6.el9_8
 p11-kit 0.26.2-1.el9
 p11-kit-trust 0.26.2-1.el9
 pam 1.5.1-28.el9
@@ -5478,7 +5459,7 @@ supervisor 4.2.5
 
 ```text
 aiohappyeyeballs 2.6.1
-aiohttp 3.14.1
+aiohttp 3.14.3
 aiosignal 1.4.0
 annotated-types 0.7.0
 ansible-ai-connect 0.1.0
@@ -5505,15 +5486,15 @@ cffi 2.0.0
 charset-normalizer 3.4.2
 click 8.2.1
 constantly 23.10.4
-cryptography 46.0.7
+cryptography 50.0.0
 Cython 3.2.4
 daphne 4.2.3
 decorator 5.2.1
 defusedxml 0.7.1
 diff-match-patch 20241021
-Django 5.2.15
+Django 5.2.17
 django-allow-cidr 0.8.0
-django-ansible-base 2.6.20260804
+django-ansible-base 2.6.20260824
 django-crum 0.7.9
 django-deprecate-fields 0.1.2
 django-extensions 3.2.3
@@ -5525,7 +5506,7 @@ django-test-migrations 1.5.0
 django_csp 3.8
 djangorestframework 3.15.2
 drf-spectacular 0.29.0
-dynaconf 3.2.11
+dynaconf 3.3.5
 et_xmlfile 2.0.0
 executing 2.2.0
 expiringdict 1.2.2
@@ -5580,9 +5561,9 @@ pycparser 2.22
 pydantic 2.11.5
 pydantic_core 2.33.2
 PyDrive2 1.20.0
-Pygments 2.19.1
+Pygments 2.20.0
 PyJWT 2.13.0
-pyOpenSSL 26.2.0
+pyOpenSSL 26.4.0
 pyparsing 3.2.3
 pyRFC3339 2.0.1
 python-dateutil 2.9.0.post0
@@ -5608,10 +5589,10 @@ social-auth-core 4.7.0
 sqlparse 0.5.3
 stack_data 0.6.3
 subprocess-tee 0.4.2
-tablib 3.8.0
+tablib 3.10.0
 termcolor 3.1.0
 traitlets 5.14.3
-Twisted 24.11.0
+Twisted 26.4.0
 txaio 23.1.1
 typing-inspection 0.4.1
 typing_extensions 4.14.0
@@ -5640,9 +5621,9 @@ zope.interface 7.2
 | Image | `registry.redhat.io/ansible-automation-platform-26/mcp-tools-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/mcp-tools-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.6.20260724` / `1785339117` |
-| Image ID | `sha256:9068cc9f9437874a34c7c87d18465d6adc522e6cdb75305e3c5d0dd84076f75b` |
-| Build date | 2026-08-02T01:26:08Z |
+| Labels `version` / `release` | `2.6.20260814` / `1786987521` |
+| Image ID | `sha256:0915691fe42f972b2266f528f8ac0d7cc131b247f021e7b990419278ae3285ef` |
+| Build date | 2026-08-20T09:49:29Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -5659,7 +5640,7 @@ bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dejavu-sans-fonts 2.37-18.el9
 dnf-data 4.14.0-34.el9_8
@@ -5670,13 +5651,13 @@ findutils 4.8.0-7.el9
 fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -5690,25 +5671,25 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
 libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdnf 0.69.0-18.el9
 libevent 2.1.12-8.el9_4
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 librepo 1.19.0-1.el9
@@ -5745,8 +5726,8 @@ openldap 2.6.8-4.el9
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
 pcre2-syntax 10.40-6.el9
@@ -5769,7 +5750,7 @@ setup 2.13.7-10.el9
 shadow-utils 4.9-16.el9
 sqlite-libs 3.34.1-10.el9_8
 systemd-libs 252-67.el9_8.4
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 xz-libs 5.2.5-8.el9_0
 zlib 1.2.11-40.el9
 ```
@@ -5800,7 +5781,7 @@ cachetools 7.1.4
 certifi 2026.6.17
 cffi 2.0.0
 click 8.4.2
-cryptography 49.0.0
+cryptography 50.0.0
 fire 0.7.1
 gunicorn 26.0.0
 h11 0.16.0
@@ -5847,9 +5828,9 @@ uvicorn-worker 0.4.0
 | Image | `registry.redhat.io/ansible-automation-platform-26/receptor-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/receptor-rhel9.tar.gz` |
-| Labels `version` / `release` | `1.6.7` / `1785339117` |
-| Image ID | `sha256:ddedf519e3307d1ff5d03c7367d2de9ac4c5760f67284b970e21e102dd27b6a1` |
-| Build date | 2026-08-02T00:55:17Z |
+| Labels `version` / `release` | `1.6.7` / `1786987521` |
+| Image ID | `sha256:d5bb49d67b11ef0e7722c192ea9c156fd86ba8c2a01614ec6c708fe8bae20f56` |
+| Build date | 2026-08-20T05:06:52Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -5866,7 +5847,7 @@ bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dejavu-sans-fonts 2.37-18.el9
 dnf-data 4.14.0-34.el9_8
@@ -5877,13 +5858,13 @@ findutils 4.8.0-7.el9
 fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -5897,25 +5878,25 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
 libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdnf 0.69.0-18.el9
 libevent 2.1.12-8.el9_4
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 librepo 1.19.0-1.el9
@@ -5952,8 +5933,8 @@ openldap 2.6.8-4.el9
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
 pcre2-syntax 10.40-6.el9
@@ -5974,7 +5955,7 @@ shadow-utils 4.9-16.el9
 shadow-utils-subid 4.9-16.el9
 sqlite-libs 3.34.1-10.el9_8
 systemd-libs 252-67.el9_8.4
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 xz-libs 5.2.5-8.el9_0
 zlib 1.2.11-40.el9
 ```
@@ -5987,7 +5968,7 @@ zlib 1.2.11-40.el9
 ansible-runner 2.4.3
 dumb-init 1.2.5.post1
 lockfile 0.12.2
-packaging 26.2
+packaging 26.3
 pexpect 4.9.0
 pip 23.2.1
 ptyprocess 0.7.0
@@ -6006,9 +5987,9 @@ PyYAML 6.0.3
 | Image | `registry.redhat.io/ansible-automation-platform-tech-preview/mcp-server-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/mcp-server-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.6.20260715` / `1785358992` |
-| Image ID | `sha256:f9d01f6bb2572d1b15ee26ee9a9a30aadc83735b8ca9968084ed1afd7ef5435d` |
-| Build date | 2026-08-03T16:09:05Z |
+| Labels `version` / `release` | `2.6.20260824` / `1787020445` |
+| Image ID | `sha256:8fd2887ef20206215a611736b30a97b42487fe45f39737d99029108697e315c3` |
+| Build date | 2026-08-20T12:13:41Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | N/A |
@@ -6028,7 +6009,7 @@ coreutils-single 8.32-41.el9_8
 cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -6042,14 +6023,14 @@ findutils 4.8.0-7.el9
 fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
-glib2 2.68.4-19.el9_8.2
+glib2 2.68.4-19.el9_8.9
 glibc 2.34-275.el9_8
 glibc-common 2.34-275.el9_8
 glibc-langpack-en 2.34-275.el9_8
 glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -6065,7 +6046,7 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -6073,7 +6054,7 @@ libbrotli 1.0.9-9.el9_7
 libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
@@ -6081,13 +6062,13 @@ libevent 2.1.12-8.el9_4
 libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libpeas 1.30.0-4.el9
 libpwquality 1.4.4-8.el9
 librepo 1.19.0-1.el9
@@ -6122,19 +6103,19 @@ nettle 3.10.1-1.el9
 nginx 1.24.0-7.module+el9.8.0+24502+c9b9ab67.3
 nginx-core 1.24.0-7.module+el9.8.0+24502+c9b9ab67.3
 nginx-filesystem 1.24.0-7.module+el9.8.0+24502+c9b9ab67.3
-nodejs 22.23.1-2.module+el9.8.0+24538+3f176d52
-nodejs-full-i18n 22.23.1-2.module+el9.8.0+24538+3f176d52
-nodejs-libs 22.23.1-2.module+el9.8.0+24538+3f176d52
-nodejs-nodemon 3.1.14-1.module+el9.8.0+24540+c30b2ffe
-npm 10.9.8-1.22.23.1.2.module+el9.8.0+24538+3f176d52
+nodejs 22.23.1-3.module+el9.8.0+24637+e0b636e5
+nodejs-full-i18n 22.23.1-3.module+el9.8.0+24637+e0b636e5
+nodejs-libs 22.23.1-3.module+el9.8.0+24637+e0b636e5
+nodejs-nodemon 3.1.14-2.module+el9.8.0+24637+e0b636e5
+npm 10.9.8-1.22.23.1.3.module+el9.8.0+24637+e0b636e5
 npth 1.6-8.el9
 openldap 2.6.8-4.el9
 openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
@@ -6155,7 +6136,7 @@ systemd-libs 252-67.el9_8.4
 systemd-pam 252-67.el9_8.4
 systemd-rpm-macros 252-67.el9_8.4
 tar 1.34-11.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 util-linux 2.37.4-25.el9
 util-linux-core 2.37.4-25.el9
 which 2.21-30.el9_6
@@ -6174,9 +6155,9 @@ zlib 1.2.11-40.el9
 | Image | `registry.redhat.io/ansible-automation-platform-tech-preview/metrics-service-rhel9` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/metrics-service-rhel9.tar.gz` |
-| Labels `version` / `release` | `2.6.20260804` / `1785339117` |
-| Image ID | `sha256:781ab32ac7f8a4bb44d1a80679e5f794cb17a151852c834a191804e24f142e5e` |
-| Build date | 2026-08-02T01:27:06Z |
+| Labels `version` / `release` | `2.6.20260824` / `1786987521` |
+| Image ID | `sha256:f30238dcadd1f664f9dccdea64e7d07c0c910cb65d7aabb18c5dec46df0bc64a` |
+| Build date | 2026-08-20T09:49:12Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.12 |
@@ -6196,7 +6177,7 @@ coreutils-single 8.32-41.el9_8
 cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -6214,14 +6195,14 @@ fonts-filesystem 2.0.5-7.el9.1
 gawk 5.1.0-6.el9
 gdbm-libs 1.23-1.el9
 git-core 2.52.0-1.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-langpack-en 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-langpack-en 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -6238,7 +6219,7 @@ langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -6246,7 +6227,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcbor 0.7.0-5.el9
 libcom_err 1.46.5-8.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libeconf 0.4.1-7.el9_8
@@ -6256,7 +6237,7 @@ libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libfido2 1.13.0-2.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgfortran 11.5.0-14.el9
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
@@ -6264,7 +6245,7 @@ libidn2 2.3.0-7.el9
 libksba 1.5.1-7.el9
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libnsl2 2.0.0-1.el9
 libpeas 1.30.0-4.el9
 libpq 13.23-3.el9_8
@@ -6314,15 +6295,15 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
 pcre2-syntax 10.40-6.el9
 popt 1.18-8.el9
-postgresql 13.23-3.el9_8
-postgresql-private-libs 13.23-3.el9_8
+postgresql 13.23-5.el9_8
+postgresql-private-libs 13.23-5.el9_8
 python3.12 3.12.13-3.el9_8.1
 python3.12-libs 3.12.13-3.el9_8.1
 python3.12-pip-wheel 23.2.1-5.el9
@@ -6340,7 +6321,7 @@ systemd 252-67.el9_8.4
 systemd-libs 252-67.el9_8.4
 systemd-pam 252-67.el9_8.4
 systemd-rpm-macros 252-67.el9_8.4
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 util-linux 2.37.4-25.el9
 util-linux-core 2.37.4-25.el9
 xz-libs 5.2.5-8.el9_0
@@ -6366,7 +6347,7 @@ cryptography 48.0.0
 dispatcherd 2026.1.27
 distro 1.9.0
 Django 5.2.7
-django-ansible-base 2.6.20260804
+django-ansible-base 2.6.20260824
 django-crum 0.7.9
 django-extensions 4.1
 django-flags 5.2.0
@@ -6385,10 +6366,10 @@ jsonschema 4.25.1
 jsonschema-specifications 2025.9.1
 kubernetes 35.0.0
 metrics-service 1.0.0
-metrics-utility 0.7.3
+metrics-utility 0.7.7
 numpy 2.4.2
 oauthlib 3.3.1
-openpyxl 3.1.2
+openpyxl 3.1.5
 packaging 26.0
 pandas 3.0.1
 pip 26.0.1
@@ -6430,9 +6411,9 @@ whitenoise 6.12.0
 | Image | `registry.redhat.io/rhel9/pcp` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/pcp.tar.gz` |
-| Labels `version` / `release` | `6` / `1785949617` |
-| Image ID | `sha256:16fd1e614a88eebbd2425e24004b3623d12a5961f0ac40cc148c72eac06f5b55` |
-| Build date | 2026-08-05T17:07:32Z |
+| Labels `version` / `release` | `6` / `1787079009` |
+| Image ID | `sha256:b423bd32e15d7f4c20a2dbf7cec8641ee8ba44b6f389404f10b843444dfe1db4` |
+| Build date | 2026-08-18T18:51:40Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9 |
@@ -6455,7 +6436,7 @@ cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
 crypto-policies-scripts 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -6481,7 +6462,7 @@ gdb-gdbserver 16.3-3.el9
 gdbm-libs 1.23-1.el9
 gettext 0.21-8.el9
 gettext-libs 0.21-8.el9
-glib2 2.68.4-19.el9_8.2
+glib2 2.68.4-19.el9_8.9
 glibc 2.34-275.el9_8
 glibc-common 2.34-275.el9_8
 glibc-minimal-langpack 2.34-275.el9_8
@@ -6507,7 +6488,7 @@ langpacks-core-en 3.0-16.el9
 langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -6516,7 +6497,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
 libcomps 0.1.18-1.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libdnf-plugin-subscription-manager 1.29.50-1.el9
@@ -6533,7 +6514,7 @@ libksba 1.5.1-7.el9
 libmnl 1.0.4-16.el9_4
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libpkgconf 1.7.3-10.el9
 libpwquality 1.4.4-8.el9
 librepo 1.19.0-1.el9
@@ -6575,15 +6556,15 @@ p11-kit 0.26.4-1.el9_8
 p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 passwd 0.80-12.el9
-pcp 6.3.7-8.el9_8
-pcp-conf 6.3.7-8.el9_8
-pcp-doc 6.3.7-8.el9_8
-pcp-libs 6.3.7-8.el9_8
-pcp-pmda-dm 6.3.7-8.el9_8
-pcp-pmda-nfsclient 6.3.7-8.el9_8
-pcp-pmda-openmetrics 6.3.7-8.el9_8
-pcp-system-tools 6.3.7-8.el9_8
-pcp-zeroconf 6.3.7-8.el9_8
+pcp 6.3.7-8.el9_8.4
+pcp-conf 6.3.7-8.el9_8.4
+pcp-doc 6.3.7-8.el9_8.4
+pcp-libs 6.3.7-8.el9_8.4
+pcp-pmda-dm 6.3.7-8.el9_8.4
+pcp-pmda-nfsclient 6.3.7-8.el9_8.4
+pcp-pmda-openmetrics 6.3.7-8.el9_8.4
+pcp-system-tools 6.3.7-8.el9_8.4
+pcp-zeroconf 6.3.7-8.el9_8.4
 pcre 8.44-4.el9
 pcre2 10.40-6.el9
 pcre2-syntax 10.40-6.el9
@@ -6593,7 +6574,7 @@ pkgconf-pkg-config 1.7.3-10.el9
 popt 1.18-8.el9
 procps-ng 3.3.17-14.el9
 psmisc 23.4-3.el9
-python3 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
 python3-chardet 4.0.0-5.el9
 python3-cloud-what 1.29.50-1.el9
 python3-dateutil 2.9.0.post0-1.el9_7
@@ -6605,14 +6586,14 @@ python3-gobject-base 3.40.1-6.el9
 python3-gobject-base-noarch 3.40.1-6.el9
 python3-gpg 1.15.1-6.el9
 python3-hawkey 0.69.0-18.el9
-python3-idna 2.10-7.el9_4.1
+python3-idna 2.10-8.el9_8
 python3-iniparse 0.4-45.el9
 python3-inotify 0.9.6-25.el9
 python3-libcomps 0.1.18-1.el9
 python3-libdnf 0.69.0-18.el9
 python3-librepo 1.19.0-1.el9
-python3-libs 3.9.25-7.el9_8.2
-python3-pcp 6.3.7-8.el9_8
+python3-libs 3.9.25-7.el9_8.3
+python3-pcp 6.3.7-8.el9_8.4
 python3-pip-wheel 21.3.1-2.el9_8
 python3-pysocks 1.7.1-12.el9
 python3-requests 2.25.1-10.el9_6
@@ -6642,7 +6623,7 @@ systemd-pam 252-67.el9_8.4
 systemd-rpm-macros 252-67.el9_8.4
 tar 1.34-11.el9
 tpm2-tss 3.2.3-1.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 usermode 1.114-7.el9
 util-linux 2.37.4-25.el9
 util-linux-core 2.37.4-25.el9
@@ -6692,9 +6673,9 @@ urllib3 1.26.5
 | Image | `registry.redhat.io/rhel9/postgresql-15` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/postgresql-15.tar.gz` |
-| Labels `version` / `release` | `1` / `1785718504` |
-| Image ID | `sha256:3d0f2918cf9e67369c8a5611af5bb15510b5dee05212dac2175860ca531cf47a` |
-| Build date | 2026-08-03T00:56:18Z |
+| Labels `version` / `release` | `1` / `1787044133` |
+| Image ID | `sha256:2fc294ba14c4335fb54932738ba1dd9d826a1674bf9bb8c8054ee389a4f6212b` |
+| Build date | 2026-08-18T09:10:00Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9 |
@@ -6709,7 +6690,7 @@ attr 2.5.1-3.el9
 audit-libs 3.1.5-8.el9
 basesystem 11-13.el9
 bash 5.1.8-9.el9
-bsdtar 3.5.3-9.el9_7
+bsdtar 3.5.3-11.el9_8
 bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
@@ -6717,7 +6698,7 @@ cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
 crypto-policies-scripts 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -6741,15 +6722,15 @@ gdb-gdbserver 16.3-3.el9
 gdbm-libs 1.23-1.el9
 gettext 0.21-8.el9
 gettext-libs 0.21-8.el9
-glib2 2.68.4-19.el9_8.2
-glibc 2.34-274.el9_8
-glibc-common 2.34-274.el9_8
-glibc-langpack-en 2.34-274.el9_8
-glibc-locale-source 2.34-274.el9_8
-glibc-minimal-langpack 2.34-274.el9_8
+glib2 2.68.4-19.el9_8.9
+glibc 2.34-275.el9_8
+glibc-common 2.34-275.el9_8
+glibc-langpack-en 2.34-275.el9_8
+glibc-locale-source 2.34-275.el9_8
+glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -6770,7 +6751,7 @@ langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -6779,7 +6760,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
 libcomps 0.1.18-1.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libdnf-plugin-subscription-manager 1.29.50-1.el9
@@ -6788,7 +6769,7 @@ libevent 2.1.12-8.el9_4
 libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
 libicu 67.1-10.el9_6
@@ -6797,7 +6778,7 @@ libksba 1.5.1-7.el9
 libmnl 1.0.4-16.el9_4
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libpipeline 1.5.3-4.el9
 libpwquality 1.4.4-8.el9
 librepo 1.19.0-1.el9
@@ -6838,8 +6819,8 @@ openssl 3.5.5-6.el9_8
 openssl-fips-provider 3.0.7-11.el9_8
 openssl-fips-provider-so 3.0.7-11.el9_8
 openssl-libs 3.5.5-6.el9_8
-p11-kit 0.26.2-1.el9
-p11-kit-trust 0.26.2-1.el9
+p11-kit 0.26.4-1.el9_8
+p11-kit-trust 0.26.4-1.el9_8
 pam 1.5.1-28.el9
 passwd 0.80-12.el9
 pcre 8.44-4.el9
@@ -6911,7 +6892,7 @@ postgresql-server 15.18-1.module+el9.8.0+24358+32c5830e
 postgresql-upgrade 15.18-1.module+el9.8.0+24358+32c5830e
 procps-ng 3.3.17-14.el9
 psmisc 23.4-3.el9
-python3 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
 python3-chardet 4.0.0-5.el9
 python3-cloud-what 1.29.50-1.el9
 python3-dateutil 2.9.0.post0-1.el9_7
@@ -6923,13 +6904,13 @@ python3-gobject-base 3.40.1-6.el9
 python3-gobject-base-noarch 3.40.1-6.el9
 python3-gpg 1.15.1-6.el9
 python3-hawkey 0.69.0-18.el9
-python3-idna 2.10-7.el9_4.1
+python3-idna 2.10-8.el9_8
 python3-iniparse 0.4-45.el9
 python3-inotify 0.9.6-25.el9
 python3-libcomps 0.1.18-1.el9
 python3-libdnf 0.69.0-18.el9
 python3-librepo 1.19.0-1.el9
-python3-libs 3.9.25-7.el9_8.2
+python3-libs 3.9.25-7.el9_8.3
 python3-pip-wheel 21.3.1-2.el9_8
 python3-pysocks 1.7.1-12.el9
 python3-requests 2.25.1-10.el9_6
@@ -6962,7 +6943,7 @@ systemd-rpm-macros 252-67.el9_8.4
 tar 1.34-11.el9
 tcl 8.6.10-7.el9
 tpm2-tss 3.2.3-1.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 unzip 6.0-60.el9
 usermode 1.114-7.el9
 util-linux 2.37.4-25.el9
@@ -7014,9 +6995,9 @@ urllib3 1.26.5
 | Image | `registry.redhat.io/rhel9/redis-6` |
 | Tag in bundle | `latest` |
 | Archive | `bundle/images/redis-6.tar.gz` |
-| Labels `version` / `release` | `1` / `1785892346` |
-| Image ID | `sha256:9390b4491fb2e3aef632db6ae7553ad45971d27fa25ee7fc4f3602f780680f65` |
-| Build date | 2026-08-05T01:12:47Z |
+| Labels `version` / `release` | `1` / `1787043062` |
+| Image ID | `sha256:2fcc7d1f025a273828dbffd21d6d336a203749ba05b7dd1460008a840e7bbba8` |
+| Build date | 2026-08-18T08:52:40Z |
 | Architecture | amd64 |
 | RHEL version | Red Hat Enterprise Linux 9.8 (Plow) |
 | Python | 3.9 |
@@ -7031,7 +7012,7 @@ attr 2.5.1-3.el9
 audit-libs 3.1.5-8.el9
 basesystem 11-13.el9
 bash 5.1.8-9.el9
-bsdtar 3.5.3-9.el9_7
+bsdtar 3.5.3-11.el9_8
 bzip2-libs 1.0.8-11.el9
 ca-certificates 2025.2.80_v9.0.305-91.el9
 coreutils-single 8.32-41.el9_8
@@ -7039,7 +7020,7 @@ cracklib 2.9.6-28.el9
 cracklib-dicts 2.9.6-28.el9
 crypto-policies 20260224-1.gitea0f072.el9_8
 crypto-policies-scripts 20260224-1.gitea0f072.el9_8
-curl-minimal 7.76.1-40.el9
+curl-minimal 7.76.1-40.el9_8.5
 cyrus-sasl-lib 2.1.27-22.el9
 dbus 1.12.20-8.el9
 dbus-broker 28-7.el9
@@ -7064,7 +7045,7 @@ gdb-gdbserver 16.3-3.el9
 gdbm-libs 1.23-1.el9
 gettext 0.21-8.el9
 gettext-libs 0.21-8.el9
-glib2 2.68.4-19.el9_8.2
+glib2 2.68.4-19.el9_8.9
 glibc 2.34-275.el9_8
 glibc-common 2.34-275.el9_8
 glibc-langpack-en 2.34-275.el9_8
@@ -7072,7 +7053,7 @@ glibc-locale-source 2.34-275.el9_8
 glibc-minimal-langpack 2.34-275.el9_8
 gmp 6.2.0-13.el9
 gnupg2 2.3.3-5.el9_7
-gnutls 3.8.10-4.el9_8
+gnutls 3.8.10-8.el9_8
 gobject-introspection 1.68.0-11.el9
 gpg-pubkey 5a6340b3-6229229e
 gpg-pubkey fd431d51-4ae0493b
@@ -7093,7 +7074,7 @@ langpacks-core-font-en 3.0-16.el9
 langpacks-en 3.0-16.el9
 less 590-6.el9
 libacl 2.4.0-1.el9_8
-libarchive 3.5.3-9.el9_7
+libarchive 3.5.3-11.el9_8
 libassuan 2.5.5-3.el9
 libattr 2.5.1-3.el9
 libblkid 2.37.4-25.el9
@@ -7102,7 +7083,7 @@ libcap 2.48-10.el9_8.1
 libcap-ng 0.8.2-7.el9
 libcom_err 1.46.5-8.el9
 libcomps 0.1.18-1.el9
-libcurl-minimal 7.76.1-40.el9
+libcurl-minimal 7.76.1-40.el9_8.5
 libdb 5.3.28-57.el9_6
 libdnf 0.69.0-18.el9
 libdnf-plugin-subscription-manager 1.29.50-1.el9
@@ -7111,7 +7092,7 @@ libevent 2.1.12-8.el9_4
 libfdisk 2.37.4-25.el9
 libffi 3.4.2-8.el9
 libgcc 11.5.0-14.el9
-libgcrypt 1.10.0-11.el9
+libgcrypt 1.10.0-13.el9_8
 libgomp 11.5.0-14.el9
 libgpg-error 1.42-5.el9
 libidn2 2.3.0-7.el9
@@ -7119,7 +7100,7 @@ libksba 1.5.1-7.el9
 libmnl 1.0.4-16.el9_4
 libmodulemd 2.13.0-2.el9
 libmount 2.37.4-25.el9
-libnghttp2 1.43.0-6.el9_8.1
+libnghttp2 1.43.0-6.el9_8.2
 libpipeline 1.5.3-4.el9
 libpwquality 1.4.4-8.el9
 librepo 1.19.0-1.el9
@@ -7170,7 +7151,7 @@ policycoreutils 3.6-5.el9
 popt 1.18-8.el9
 procps-ng 3.3.17-14.el9
 psmisc 23.4-3.el9
-python3 3.9.25-7.el9_8.2
+python3 3.9.25-7.el9_8.3
 python3-chardet 4.0.0-5.el9
 python3-cloud-what 1.29.50-1.el9
 python3-dateutil 2.9.0.post0-1.el9_7
@@ -7182,13 +7163,13 @@ python3-gobject-base 3.40.1-6.el9
 python3-gobject-base-noarch 3.40.1-6.el9
 python3-gpg 1.15.1-6.el9
 python3-hawkey 0.69.0-18.el9
-python3-idna 2.10-7.el9_4.1
+python3-idna 2.10-8.el9_8
 python3-iniparse 0.4-45.el9
 python3-inotify 0.9.6-25.el9
 python3-libcomps 0.1.18-1.el9
 python3-libdnf 0.69.0-18.el9
 python3-librepo 1.19.0-1.el9
-python3-libs 3.9.25-7.el9_8.2
+python3-libs 3.9.25-7.el9_8.3
 python3-pip-wheel 21.3.1-2.el9_8
 python3-pysocks 1.7.1-12.el9
 python3-requests 2.25.1-10.el9_6
@@ -7222,7 +7203,7 @@ systemd-rpm-macros 252-67.el9_8.4
 tar 1.34-11.el9
 tcl 8.6.10-7.el9
 tpm2-tss 3.2.3-1.el9
-tzdata 2026b-1.el9
+tzdata 2026c-1.el9_8
 unzip 6.0-60.el9
 usermode 1.114-7.el9
 util-linux 2.37.4-25.el9
@@ -7285,7 +7266,7 @@ Collection tarballs under `bundle/collections/` (uploaded to Automation Hub duri
 
 ```text
 amazon.aws 9.5.1 (certified)
-ansible.controller 4.7.15 (certified)
+ansible.controller 4.7.16 (certified)
 ansible.eda 2.11.0 (certified)
 ansible.hub 1.1.0 (certified)
 ansible.netcommon 8.1.0 (certified)

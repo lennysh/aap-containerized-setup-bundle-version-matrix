@@ -1,10 +1,11 @@
-## 📦 Inspected Bundles
+## 📦 Inspected Bundles by AAP Version
 
-Each bundle page lists every container image in the bundle, with consolidated RPM and Python
-package tables for CVE triage.
+Pick your AAP version to see every inspected bundle for it, newest first.
 
-| Bundle (Click for details) | AAP | Architecture | Images |
-| :------------------------- | :-- | :----------- | -----: |
-{% for bundle in bundles %}
-| [{{ bundle.bundle_version }}](./bundles/{{ bundle.bundle_id }}/README.md) | {{ bundle.aap_version }} | {{ bundle.architecture }} | {{ bundle.images | length }} |
+| AAP Version (Click for bundles) | Bundles | Latest Bundle | Latest Bundle Created |
+| :------------------------------ | ------: | :------------ | :-------------------- |
+{% for aap_version in aap_versions %}
+{%   set version_bundles = bundles | selectattr('aap_version', 'equalto', aap_version) | list %}
+{%   set latest = version_bundles | first %}
+| [AAP {{ aap_version }}](./bundles/{{ aap_version }}/README.md) | {{ version_bundles | length }} | [{{ latest.bundle_version }}](./bundles/{{ aap_version }}/{{ latest.bundle_id }}/README.md) | {{ latest.bundle_created | default('N/A', true) }} |
 {% endfor %}

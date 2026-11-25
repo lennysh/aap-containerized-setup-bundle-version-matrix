@@ -14,7 +14,7 @@
 
 - name: Check for existing bundle data
   ansible.builtin.stat:
-    path: "{{ bundle_inspector_bundles_root }}/{{ _bundle_id }}/bundle.yml"
+    path: "{{ bundle_inspector_bundles_root }}/{{ _bundle_aap }}/{{ _bundle_id }}/bundle.yml"
   register: _bundle_existing
   when: _bundle_match | length == 3
 
@@ -55,12 +55,12 @@
 
     - name: Ensure bundle directory exists
       ansible.builtin.file:
-        path: "{{ bundle_inspector_bundles_root }}/{{ _bundle.bundle_id }}"
+        path: "{{ bundle_inspector_bundles_root }}/{{ _bundle.aap_version }}/{{ _bundle.bundle_id }}"
         state: directory
         mode: "0755"
 
     - name: Write bundle vars file
       ansible.builtin.template:
         src: bundle_var.yml.j2
-        dest: "{{ bundle_inspector_bundles_root }}/{{ _bundle.bundle_id }}/bundle.yml"
+        dest: "{{ bundle_inspector_bundles_root }}/{{ _bundle.aap_version }}/{{ _bundle.bundle_id }}/bundle.yml"
         mode: "0644"

@@ -5,19 +5,33 @@
     files_matching: '^bundle\.yml$'
     name: _bundles_by_id
 
-- name: Sort bundles newest first
+- name: Sort bundles newest first and group by AAP version
   ansible.builtin.set_fact:
     bundles: "{{ _bundles_by_id.values() | sort(attribute='sort_key', reverse=True) }}"
+    # sort_key starts with the zero-padded AAP version, so the first segment sorts versions correctly.
+    aap_versions: >-
+      {{ _bundles_by_id.values()
+         | map(attribute='sort_key') | map('split', '-') | map('first') | unique | sort(reverse=True)
+         | map('regex_replace', '0*(\d+)', '\1') | list }}
 
 - name: Generate per-bundle README files
   ansible.builtin.template:
     src: bundle_report.md.j2
-    dest: "{{ md_generator_bundles_root }}/{{ bundle.bundle_id }}/README.md"
+    dest: "{{ md_generator_bundles_root }}/{{ bundle.aap_version }}/{{ bundle.bundle_id }}/README.md"
     mode: "0644"
   loop: "{{ bundles }}"
   loop_control:
     loop_var: bundle
     label: "{{ bundle.bundle_id }}"
+
+- name: Generate per-AAP-version README files
+  ansible.builtin.template:
+    src: aap_version_report.md.j2
+    dest: "{{ md_generator_bundles_root }}/{{ aap_version }}/README.md"
+    mode: "0644"
+  loop: "{{ aap_versions }}"
+  loop_control:
+    loop_var: aap_version
 
 - name: Update root README tables
   ansible.builtin.blockinfile:

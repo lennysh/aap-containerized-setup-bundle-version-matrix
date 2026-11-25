@@ -1,7 +1,10 @@
+[All AAP versions](../../../README.md) / [AAP 2.7](../README.md) / 2.7-12.2
+
 # AAP Containerized Setup Bundle 2.7-12.2 (x86_64)
 
 - **Bundle file:** `ansible-automation-platform-containerized-setup-bundle-2.7-12.2-x86_64.tar.gz`
 - **AAP version:** 2.7
+- **Bundle created:** 2026-11-03 13:51:57 UTC
 - **Container images:** 21
 - **Distinct RPM package versions:** 459
 - **Distinct Python package versions:** 849

@@ -12,22 +12,15 @@ The main use is **CVE triage for a specific install**: open the page for the bun
 This repo is driven by installer downloads, not a registry, so it is updated manually. For the registry-based EE/DE matrix, see [aap-container-images-version-matrix](https://github.com/lennysh/aap-container-images-version-matrix).
 
 [comment]: <> (BEGIN Ansible Managed)
-## 📦 Inspected Bundles
+## 📦 Inspected Bundles by AAP Version
 
-Each bundle page lists every container image in the bundle, with consolidated RPM and Python
-package tables for CVE triage.
+Pick your AAP version to see every inspected bundle for it, newest first.
 
-| Bundle (Click for details) | AAP | Architecture | Images |
-| :------------------------- | :-- | :----------- | -----: |
-| [2.7-12.4](./bundles/2.7-12.4-x86_64/README.md) | 2.7 | x86_64 | 21 |
-| [2.7-12.2](./bundles/2.7-12.2-x86_64/README.md) | 2.7 | x86_64 | 21 |
-| [2.7-4](./bundles/2.7-4-x86_64/README.md) | 2.7 | x86_64 | 19 |
-| [2.6-14.4](./bundles/2.6-14.4-x86_64/README.md) | 2.6 | x86_64 | 19 |
-| [2.6-12](./bundles/2.6-12-x86_64/README.md) | 2.6 | x86_64 | 19 |
-| [2.6-11.1](./bundles/2.6-11.1-x86_64/README.md) | 2.6 | x86_64 | 19 |
-| [2.6-5](./bundles/2.6-5-x86_64/README.md) | 2.6 | x86_64 | 18 |
-| [2.6-3](./bundles/2.6-3-x86_64/README.md) | 2.6 | x86_64 | 17 |
-| [2.5-25.8](./bundles/2.5-25.8-x86_64/README.md) | 2.5 | x86_64 | 14 |
+| AAP Version (Click for bundles) | Bundles | Latest Bundle | Latest Bundle Created |
+| :------------------------------ | ------: | :------------ | :-------------------- |
+| [AAP 2.7](./bundles/2.7/README.md) | 3 | [2.7-12.4](./bundles/2.7/2.7-12.4-x86_64/README.md) | 2026-11-20 13:05:26 UTC |
+| [AAP 2.6](./bundles/2.6/README.md) | 5 | [2.6-14.4](./bundles/2.6/2.6-14.4-x86_64/README.md) | 2026-11-20 18:22:08 UTC |
+| [AAP 2.5](./bundles/2.5/README.md) | 1 | [2.5-25.8](./bundles/2.5/2.5-25.8-x86_64/README.md) | 2026-11-11 18:11:51 UTC |
 [comment]: <> (END Ansible Managed)
 
 ## 🛠 Updating the version matrix
@@ -37,7 +30,7 @@ Do **not** edit `bundles/**/README.md` or the tables above by hand. They are gen
 ### Prerequisites
 
 - Ansible 2.15+ (only `ansible.builtin` is used)
-- `python3` 3.9+ and `rpm` on your PATH (RHEL 9 images use the sqlite rpmdb; Fedora/RHEL 9+ hosts read it fine)
+- `python3` 3.9+ and `rpm` on your PATH. RHEL 9 images (2.6+) use the sqlite rpmdb, and RHEL 8 images (2.5) use the older Berkeley DB format, read through rpm's read-only `bdb_ro` backend. A current Fedora host handles both; this is tested.
 - No `podman`, registry login, or root access is needed
 
 ### Workflow
@@ -62,6 +55,8 @@ Do **not** edit `bundles/**/README.md` or the tables above by hand. They are gen
 
 Nothing is extracted to disk, nothing from the images is executed, and your podman storage is untouched. A typical bundle takes about a minute.
 
+The **bundle created** date comes from the bundle's gzip header (when the tarball was written).
+
 Image tags inside bundles are mostly `latest`, and the docker-archive format does not keep registry manifest digests. So images are keyed by **image ID** (config digest) and show their `version`/`release` labels and the tag used in the bundle.
 
 Python environments are reported per prefix and interpreter (for example `/usr (python3.9)`, `/usr (python3.12)`, `/var/lib/awx/venv/awx (python3.12)`), because many images ship more than one.
@@ -70,8 +65,9 @@ Python environments are reported per prefix and interpreter (for example `/usr (
 
 | Path | Contents |
 | :--- | :------- |
-| `bundles/<version>-<arch>/bundle.yml` | Full inventory for the bundle: every image's metadata, RPMs, Python environments and collections, plus installer and bundled collections |
-| `bundles/<version>-<arch>/README.md` | Generated bundle page: image summary, consolidated RPM and Python package tables, per-image details |
+| `bundles/<aap>/<version>-<arch>/bundle.yml` | Full inventory for the bundle: every image's metadata, RPMs, Python environments and collections, plus installer and bundled collections |
+| `bundles/<aap>/<version>-<arch>/README.md` | Generated bundle page: image summary, consolidated RPM and Python package tables, per-image details |
+| `bundles/<aap>/README.md` | Generated index of every bundle for that AAP version, newest first, with bundle creation dates |
 
 ### Common options
 

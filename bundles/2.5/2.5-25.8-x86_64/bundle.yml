@@ -4,6 +4,7 @@
   bundle_id: 2.5-25.8-x86_64
   sort_key: 0000000002.0000000005-0000000025.0000000008
   bundle_version: 2.5-25.8
+  bundle_created: 2026-11-11 18:11:51 UTC
   aap_version: '2.5'
   architecture: x86_64
   installer_collections:

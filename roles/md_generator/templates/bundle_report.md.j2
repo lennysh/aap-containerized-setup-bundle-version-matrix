@@ -17,10 +17,13 @@
 {%     endfor %}
 {%   endfor %}
 {% endfor %}
+[All AAP versions](../../../README.md) / [AAP {{ bundle.aap_version }}](../README.md) / {{ bundle.bundle_version }}
+
 # AAP Containerized Setup Bundle {{ bundle.bundle_version }} ({{ bundle.architecture }})
 
 - **Bundle file:** `{{ bundle.bundle_file }}`
 - **AAP version:** {{ bundle.aap_version }}
+- **Bundle created:** {{ bundle.bundle_created | default('N/A', true) }}
 - **Container images:** {{ images | length }}
 - **Distinct RPM package versions:** {{ rpm_index | length }}
 - **Distinct Python package versions:** {{ pip_index | length }}

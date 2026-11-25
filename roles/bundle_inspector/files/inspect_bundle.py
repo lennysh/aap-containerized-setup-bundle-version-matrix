@@ -12,11 +12,13 @@ image rpmdb.
 
 Prints a single JSON document on stdout.
 """
+import datetime
 import email.parser
 import json
 import os
 import posixpath
 import re
+import struct
 import subprocess
 import sys
 import tarfile
@@ -292,9 +294,15 @@ def inspect_bundle(path):
     if not match:
         raise SystemExit(f"{base}: not an AAP containerized setup bundle file name")
     images, bundled, installer = [], set(), set()
+    # The gzip header MTIME records when the bundle tarball was written; fall back to
+    # the top-level directory's mtime if the header was zeroed.
+    with open(path, "rb") as fh:
+        created_ts = struct.unpack("<I", fh.read(10)[4:8])[0]
     with tarfile.open(path, mode="r|gz") as bundle:
         for m in bundle:
             name = m.name
+            if not created_ts and m.isdir() and name.strip("/").count("/") == 0:
+                created_ts = int(m.mtime)
             inst = INSTALLER_COLLECTION_RE.match(name)
             if inst and m.isdir():
                 installer.add(f"{inst['ns']}.{inst['name']} {inst['ver']}")
@@ -312,6 +320,10 @@ def inspect_bundle(path):
         # Natural sort key so 2.7-12.4 sorts after 2.7-4 in generated tables.
         "sort_key": re.sub(r"\d+", lambda d: d.group(0).zfill(10), match["version"]),
         "bundle_version": match["version"],
+        "bundle_created": (
+            datetime.datetime.fromtimestamp(created_ts, datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+            if created_ts else None
+        ),
         "aap_version": match["aap"],
         "architecture": match["arch"],
         "installer_collections": sorted(installer),
